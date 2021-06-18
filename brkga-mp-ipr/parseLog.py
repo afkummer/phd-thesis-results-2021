@@ -1,53 +1,50 @@
 #!/usr/bin/env python3
 #! -*- coding: utf-8 -*-
 
+# Support for reading XZ-compressed data.
 import lzma
-from sys import argv
-from os import path
 
-def open_log(fname:str):
+def openLog(fname:str):
    if ".xz" in fname:
-      return lzma.open(fname, mode="rt")
+      return lzma.open(fname, "rt")
    else:
-      return open(fname)
+      return open(fname, "rt")
+
 
 if __name__ == "__main__":
+   from sys import argv
    if len(argv) != 2:
-      print("Usage: %s <1:logfile>" % argv[0])
+      print("Usage: %s <1:logfile path>")
       exit(1)
 
-   logfile = argv[1]
    instance = ""
-   seed = ""
-   flag = False
-  
-   with open_log(logfile) as fid, open("results.csv", "a") as csv:
-      if csv.tell() == 0:
-         csv.write("instance,seed,generation,remaining,local,elite.stdev,no.improve,cost,dist,tard,tmax,time,op\n")
+   seed = -1
+
+   data = []
+
+   with openLog(argv[1]) as fid:
       for line in fid:
-         if "Instance:" in line:
-            instance = line.split()[-1].strip()
-            # instance = path.splitext(path.basename(line))[0]
-            # instance = instance.replace("InstanzCPLEX_HCSRP_","")
-            # instance = instance.replace("InstanzVNS_HCSRP_","")
-         elif "Seed:" in line:
-            seed = line.split()[-1].strip()
+         tks = [x.strip() for x in line.split() if len(x.strip()) > 0]
+         if len(tks) > 0 and tks[0] == "Instance:":
+            instance = tks[1]
+         if len(tks) > 0 and tks[0] == "Seed:":
+            seed = int(tks[1])
+         if len(tks) >= 10 and tks[0] not in ['Gens', 'Cost', 'Skill', 'Task', 'Unused']:
+            if tks[0] == '*':
+               tks = tks[1:]
+            data.append(tks)
+
+   with open("results.csv", "a+") as fid:
+      if fid.tell() == 0:
+         fid.write("instance,seed,generation,remaining,cost.local,el.diver,no.impr,cost,dist,tard,tmax,time,op.flags,op.pr,op.xe,op.rst\n")
+      for row in data:
+         fid.write(instance + "," + str(seed) + ",")
+         fid.write(','.join(row))
+         if 'P' not in row[-1] and 'X' not in row[-1] and 'R' not in row[-1]:
+            fid.write(",,0,0,0")
          else:
-            tks = line.split()
-            if "Evolutionary process finished" in line:
-               flag = False
-            if len(tks) >= 9 and flag:
-               if tks[0] == "Gens":
-                  continue
-               if tks[0] == "*":
-                  tks = tks[1:]
-               csv.write("%s,%s," % (instance, seed))
-               csv.write(",".join(tks))
-               if 'X' not in tks[-1] and 'P' not in tks[-1] and 'R' not in tks[-1]:
-                  csv.write(",\n")
-               else:
-                  csv.write("\n")
-
-            if "Evolving" in line and "generations..." in line:
-               flag = True
-
+            fid.write(",")
+            fid.write("1," if 'P' in row[-1] else "0,")
+            fid.write("1," if 'X' in row[-1] else "0,")
+            fid.write("1" if 'R' in row[-1] else "0")
+         fid.write("\n")
