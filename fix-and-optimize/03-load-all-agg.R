@@ -27,13 +27,15 @@ plotInstanceProgress <- function(instance.name, iter.beg=0, iter.end=99999) {
    cat("Preprocessed data:\n")
    print(head(tmp))
 
-   plt <- ggplot(tmp, aes(iter, obj.mean, color=exp, fill=exp)) + 
+   tmp$`Algorithm` <- tmp$exp
+
+   plt <- ggplot(tmp, aes(iter, obj.mean, color=`Algorithm`, fill=`Algorithm`)) + 
       geom_line() + 
       geom_ribbon(aes(ymin=obj.min, ymax=obj.max), alpha=0.05, linetype=3) +
       geom_hline(yintercept=min(tmp$obj), linetype=2) +
-      theme_bw(16) + 
+      theme_bw(12) + 
       xlab("Iteration") +
-      ylab("Solution cost")
+      ylab("Solution cost") 
 
    dev.new()
    print(plt)
