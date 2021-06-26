@@ -1,0 +1,61 @@
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: ../instances-HHCRSP/InstanzVNS_HCSRP_300_6.txt
+-- Max threads: 1
+-- Time limit: 30 seconds
+-- Use initial solution: No
+Instance: Skills statistics exported.
+Trivial flow violations prevented generating 893504 variables.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Problem 'model.lp' read.
+Read time = 62.68 sec. (1826.68 ticks)
+CPLEX> Problem changed to LP.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+Parallel mode: deterministic, using up to 8 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 6 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+Presolve has eliminated 596814 rows and 9940 columns...
+LP Presolve eliminated 596814 rows and 9940 columns.
+Reduced LP has 1556956 rows, 1177883 columns, and 55229155 nonzeros.
+Presolve time = 56.73 sec. (15638.71 ticks)
+Symmetry aggregator did 2484024 additional substitutions.
+Initializing dual steep norms . . .
+Elapsed time = 58.42 sec. (16487.24 ticks, 1 iterations)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             1.374370
+Iteration:  1153   Dual objective     =           460.343107
+
+Dual crossover.
+  Dual:  Fixing 1900 variables.
+     1899 DMoves:  Infeasibility  1.62031500e-12  Objective  4.61146673e+02
+        0 DMoves:  Infeasibility  3.52717859e-13  Objective  4.61146673e+02
+  Dual:  Pushed 132, exchanged 1768.
+  Primal:  Fixing 3137 variables.
+     3136 PMoves:  Infeasibility  1.31145095e-15  Objective  4.61146673e+02
+        0 PMoves:  Infeasibility  5.78755793e-14  Objective  4.61146673e+02
+  Primal:  Pushed 2574, exchanged 563.
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  4.6114667333e+02
+Solution time =  105.14 sec.  Iterations = 1180 (0)
+Deterministic time = 25427.89 ticks  (241.85 ticks/sec)
+
+CPLEX> Dual simplex - Optimal:  Objective =  4.6114667333e+02
+CPLEX> 

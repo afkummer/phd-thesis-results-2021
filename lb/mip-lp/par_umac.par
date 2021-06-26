@@ -1,0 +1,59 @@
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: ../instances-HHCRSP/InstanzVNS_HCSRP_100_2.txt
+-- Max threads: 1
+-- Time limit: 30 seconds
+-- Use initial solution: No
+Instance: Skills statistics exported.
+Trivial flow violations prevented generating 53033 variables.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Problem 'model.lp' read.
+Read time = 0.77 sec. (44.23 ticks)
+CPLEX> Problem changed to LP.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+Parallel mode: deterministic, using up to 8 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 6 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 50332 rows and 1341 columns.
+Reduced LP has 68153 rows, 52118 columns, and 1245068 nonzeros.
+Presolve time = 0.66 sec. (378.00 ticks)
+Symmetry aggregator did 75652 additional substitutions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             2.666667
+Iteration:   462   Dual objective     =           288.561703
+
+Dual crossover.
+  Dual:  Fixing 430 variables.
+      429 DMoves:  Infeasibility  2.01495155e-13  Objective  2.93752357e+02
+        0 DMoves:  Infeasibility  4.28442850e-14  Objective  2.93752357e+02
+  Dual:  Pushed 17, exchanged 413.
+  Primal:  Fixing 138 variables.
+      137 PMoves:  Infeasibility  1.44328993e-15  Objective  2.93752357e+02
+        0 PMoves:  Infeasibility  1.44884105e-14  Objective  2.93752357e+02
+  Primal:  Pushed 97, exchanged 41.
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  2.9375235667e+02
+Solution time =    0.96 sec.  Iterations = 527 (0)
+Deterministic time = 693.99 ticks  (725.74 ticks/sec)
+
+CPLEX> Dual simplex - Optimal:  Objective =  2.9375235667e+02
+CPLEX> 

@@ -1,0 +1,51 @@
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: ../instances-HHCRSP/InstanzCPLEX_HCSRP_10_9.txt
+-- Max threads: 1
+-- Time limit: 30 seconds
+-- Use initial solution: No
+Instance: Skills statistics exported.
+Trivial flow violations prevented generating 112 variables.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> Problem 'model.lp' read.
+Read time = 0.00 sec. (0.05 ticks)
+CPLEX> Problem changed to LP.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+Tried aggregator 1 time.
+LP Presolve eliminated 191 rows and 64 columns.
+Reduced LP has 261 rows, 219 columns, and 1454 nonzeros.
+Presolve time = 0.00 sec. (0.57 ticks)
+Symmetry aggregator did 227 additional substitutions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            76.288721
+
+Dual crossover.
+  Dual:  Fixing 6 variables.
+        5 DMoves:  Infeasibility  0.00000000e+00  Objective  9.10136233e+01
+        0 DMoves:  Infeasibility  0.00000000e+00  Objective  9.10136233e+01
+  Dual:  Pushed 0, exchanged 6.
+  Primal:  Fixing 8 variables.
+        7 PMoves:  Infeasibility  0.00000000e+00  Objective  9.10136233e+01
+        0 PMoves:  Infeasibility  0.00000000e+00  Objective  9.10136233e+01
+  Primal:  Pushed 4, exchanged 4.
+
+Dual simplex - Optimal:  Objective =  9.1013623267e+01
+Solution time =    0.00 sec.  Iterations = 14 (0)
+Deterministic time = 1.29 ticks  (733.60 ticks/sec)
+
+CPLEX> Dual simplex - Optimal:  Objective =  9.1013623267e+01
+CPLEX> 
