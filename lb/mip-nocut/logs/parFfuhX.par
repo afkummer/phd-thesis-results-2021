@@ -1,0 +1,196 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_5.txt
+Time limit: 7200
+Working directory: ./run.Pg27SDRB
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_5.txt
+-- Max threads: 1
+-- Time limit: 300 seconds
+-- Use initial solution: Yes (mk2014)
+Trivial flow violations prevented generating 128 variables.
+Additional cuts are disabled.
+Model exported.
+Starting BRKGA.
+Generation = 50, best solution =  191.972, elapsed time = 0.031 secs.
+Generation = 100, best solution =  191.972, elapsed time = 0.06 secs.
+Generation = 150, best solution =  191.972, elapsed time = 0.089 secs.
+Generation = 200, best solution =  191.972, elapsed time = 0.118 secs.
+Generation = 250, best solution =  191.972, elapsed time = 0.147 secs.
+Generation = 300, best solution =  191.972, elapsed time = 0.176 secs.
+Generation = 350, best solution =  191.972, elapsed time = 0.205 secs.
+Generation = 400, best solution =  191.972, elapsed time = 0.234 secs.
+Generation = 450, best solution =  191.972, elapsed time = 0.262 secs.
+Generation = 500, best solution =  191.972, elapsed time = 0.291 secs.
+Generation = 550, best solution =  191.972, elapsed time = 0.32 secs.
+Generation = 600, best solution =  191.972, elapsed time = 0.349 secs.
+BRKGA finished with solution value of 191.972.
+Solving mip warm-start with constructive solution.
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               300
+Tried aggregator 2 times.
+MIP Presolve eliminated 144 rows and 165 columns.
+MIP Presolve modified 12 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 135 rows, 31 columns, and 270 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.34 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 135 rows, 31 columns, and 270 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.13 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0      191.9723      191.9723        0    0.00%
+Elapsed time = 0.00 sec. (0.63 ticks, tree = 0.00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.64 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.64 ticks)
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for emphasis for MIP optimization: 3
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for type of BQP cut generation (only applies to non-convex models solved to global optimality): 1
+New value for type of clique cut generation: 1
+New value for type of cover cut generation: 1
+New value for type of disjunctive cut generation: 1
+New value for type of flow cover cut generation: 1
+New value for type of Gomory fractional cut generation: 1
+New value for type of GUB cover cut generation: 1
+New value for type of implied bound cut generation: 1
+New value for type of Lift and Project cut generation: 1
+New value for type of local implied bound cut generation: 1
+New value for type of MCF cut generation: 1
+New value for type of mixed integer rounding cut generation: 1
+New value for type of flow path cut generation: 1
+New value for type of RLT cut generation (only applies to non-convex models solved to global optimality): 1
+New value for type of zero-half cut generation: 1
+CPLEX> New value for type of clique cut generation: -1
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for probing strategy: -1
+CPLEX> New value for direction of first branch: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.Pg27SDRB/model.lp' read.
+Read time = 0.00 sec. (0.03 ticks)
+CPLEX> Solution file './run.Pg27SDRB/initial.sol' read.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_MIP_Strategy_Branch                     1
+CPXPARAM_MIP_Cuts_Cliques                        -1
+CPXPARAM_MIP_Cuts_Covers                         1
+CPXPARAM_MIP_Cuts_FlowCovers                     1
+CPXPARAM_MIP_Cuts_Implied                        1
+CPXPARAM_MIP_Strategy_Probe                      -1
+CPXPARAM_MIP_Cuts_GUBCovers                      1
+CPXPARAM_MIP_Cuts_Gomory                         1
+CPXPARAM_MIP_Cuts_PathCut                        1
+CPXPARAM_MIP_Cuts_MIRCut                         1
+CPXPARAM_MIP_Cuts_Disjunctive                    1
+CPXPARAM_Emphasis_MIP                            3
+CPXPARAM_MIP_Cuts_ZeroHalfCut                    1
+CPXPARAM_MIP_Cuts_MCFCut                         1
+CPXPARAM_MIP_Cuts_LiftProj                       1
+CPXPARAM_MIP_Cuts_LocalImplied                   1
+CPXPARAM_MIP_Cuts_BQP                            1
+CPXPARAM_MIP_Cuts_RLT                            1
+CPXPARAM_TimeLimit                               7200
+1 of 1 MIP starts provided solutions.
+MIP start 'incumbent' defined initial solution with objective 191.9723.
+Tried aggregator 1 time.
+MIP Presolve eliminated 106 rows and 45 columns.
+MIP Presolve modified 70 coefficients.
+Reduced MIP has 174 rows, 152 columns, and 819 nonzeros.
+Reduced MIP has 120 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.60 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 174 rows, 152 columns, and 819 nonzeros.
+Reduced MIP has 120 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.47 ticks)
+Clique table members: 73.
+MIP emphasis: best bound.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.29 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          191.9723        0.0000           100.00%
+      0     0       80.7349    19      191.9723       80.7349       53   57.94%
+      0     0       98.2791    23      191.9723      Cuts: 23       73   48.81%
+      0     0      108.3782    29      191.9723      Cuts: 19      103   43.54%
+      0     0      113.1698    34      191.9723      Cuts: 23      124   41.05%
+      0     0      131.5541    28      191.9723      Cuts: 30      142   31.47%
+      0     0      141.3846    30      191.9723       Cuts: 8      168   26.35%
+      0     0      146.7122    35      191.9723      Cuts: 13      181   23.58%
+      0     0      147.0751    35      191.9723       Cuts: 4      188   23.39%
+      0     0      147.3580    32      191.9723       Cuts: 8      196   23.24%
+      0     0      147.7153    32      191.9723    MIRcuts: 1      198   23.05%
+      0     0      148.6320    32      191.9723       Cuts: 5      205   22.58%
+      0     0      151.6473    31      191.9723    MIRcuts: 5      212   21.01%
+      0     0      151.6473    31      191.9723    MIRcuts: 1      213   21.01%
+      0     2      151.6473    30      191.9723      152.4377      213   20.59%
+Elapsed time = 0.04 sec. (20.71 ticks, tree = 0.01 MB, solutions = 1)
+*   300+  130                          189.6413      179.5577             5.32%
+*   400+  120                          189.5432      182.9675             3.47%
+
+GUB cover cuts applied:  0
+Cover cuts applied:  0
+Implied bound cuts applied:  4
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  24
+Flow path cuts applied:  0
+Zero-half cuts applied:  2
+Multi commodity flow cuts applied:  4
+Lift and project cuts applied:  0
+Gomory fractional cuts applied:  0
+Disjunctive cuts applied:  0
+Cone linearizations applied:  0
+
+Root node processing (before b&c):
+  Real time             =    0.04 sec. (20.71 ticks)
+Sequential b&c:
+  Real time             =    0.11 sec. (66.50 ticks)
+                          ------------
+Total (root+branch&cut) =    0.16 sec. (87.22 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal, tolerance (0.0001/1e-06):  Objective =  1.8954317900e+02
+Current MIP best bound =  1.8953081565e+02 (gap = 0.0123634, 0.01%)
+Solution time =    0.16 sec.  Iterations = 2815  Nodes = 582 (1)
+Deterministic time = 87.22 ticks  (557.55 ticks/sec)
+
+CPLEX> Incumbent solution written to file './run.Pg27SDRB/final.sol'.
+CPLEX> 
