@@ -1,0 +1,113 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_7.txt
+Time limit: 7200
+Working directory: ./run.JsvjMQh4
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_7.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 87 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.JsvjMQh4/model.lp' read.
+Read time = 0.00 sec. (0.03 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 2 times.
+MIP Presolve eliminated 83 rows and 46 columns.
+MIP Presolve modified 114 coefficients.
+Aggregator did 2 substitutions.
+Reduced MIP has 160 rows, 142 columns, and 696 nonzeros.
+Reduced MIP has 114 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.65 ticks)
+Probing time = 0.00 sec. (0.22 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 2 rows and 0 columns.
+Reduced MIP has 158 rows, 142 columns, and 692 nonzeros.
+Reduced MIP has 114 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.39 ticks)
+Probing time = 0.00 sec. (0.23 ticks)
+Clique table members: 75.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.37 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      103.2346    24                    103.2346       32         
+      0     0      150.7138    27                    Cuts: 47       57         
+      0     0      170.1158    20                    Cuts: 25       86         
+      0     0      172.6252    22                    Cuts: 23      104         
+      0     0      190.1232    24                    Cuts: 15      134         
+      0     0      195.0523    21                    Cuts: 13      157         
+Detecting symmetries...
+      0     0      198.0412    21                     Cuts: 8      167         
+      0     0      201.5637    20                    Cuts: 12      191         
+      0     0      212.8562    38                    Cuts: 13      235         
+      0     0      213.6067    42                    Cuts: 15      250         
+      0     0      215.7411    38                    Cuts: 12      265         
+      0     0      215.7411    38                    Cuts: 13      271         
+      0     0      218.0947    45                     Cuts: 6      281         
+      0     0      218.1547    48                    Cuts: 19      290         
+      0     0      218.5771    44                    Cuts: 12      298         
+      0     0      218.6697    45                     Cuts: 2      299         
+*     0+    0                          668.6016      218.6697            67.29%
+*     0+    0                          539.8796      218.6697            59.50%
+*     0+    0                          482.7599      218.6697            54.70%
+*     0+    0                          408.9943      218.6697            46.53%
+Detecting symmetries...
+      0     2      218.6697    45      408.9943      218.8210      299   46.50%
+Elapsed time = 0.07 sec. (32.53 ticks, tree = 0.01 MB, solutions = 4)
+*    13     9      integral     0      228.8885      218.9942      371    4.32%
+*    52     5      integral     0      225.3685      222.4878      743    1.28%
+
+Clique cuts applied:  5
+Implied bound cuts applied:  5
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  44
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    0.07 sec. (32.53 ticks)
+Sequential b&c:
+  Real time             =    0.02 sec. (9.97 ticks)
+                          ------------
+Total (root+branch&cut) =    0.08 sec. (42.50 ticks)
+
+Solution pool: 6 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.2536852533e+02
+Solution time =    0.08 sec.  Iterations = 790  Nodes = 58
+Deterministic time = 42.50 ticks  (524.56 ticks/sec)
+
+CPLEX> Incumbent solution written to file './run.JsvjMQh4/final.sol'.
+CPLEX> 

@@ -1,0 +1,61 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_10.txt
+Time limit: 7200
+Working directory: ./run.RBCUgyJc
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_10.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 834830 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.RBCUgyJc/model.lp' read.
+Read time = 14.18 sec. (419.71 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+MIP Presolve eliminated 34814 rows and 7429 columns.
+MIP Presolve modified 5736 coefficients.
+Reduced MIP has 1192978 rows, 959127 columns, and 23197794 nonzeros.
+Reduced MIP has 952844 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 18.02 sec. (8078.24 ticks)
+Probing time = 1.75 sec. (447.94 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 1192978 rows, 959127 columns, and 23197794 nonzeros.
+Reduced MIP has 952844 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 56.83 sec. (13845.57 ticks)
+Probing time = 1.94 sec. (436.40 ticks)
+Clique table members: 580211.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Compressing row and column files.
+Root relaxation solution time = 27.16 sec. (7396.59 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      441.4092   846                    441.4092     8618         

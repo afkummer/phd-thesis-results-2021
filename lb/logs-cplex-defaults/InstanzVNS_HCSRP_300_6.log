@@ -1,0 +1,53 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_6.txt
+Time limit: 7200
+Working directory: ./run.RDk99N2D
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_6.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 893504 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.RDk99N2D/model.lp' read.
+Read time = 19.77 sec. (564.90 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+Presolve has eliminated 40384 rows and 9940 columns...
+MIP Presolve eliminated 40384 rows and 9940 columns.
+MIP Presolve modified 4704 coefficients.
+Reduced MIP has 1489386 rows, 1177883 columns, and 32134624 nonzeros.
+Reduced MIP has 1170686 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 24.58 sec. (10984.60 ticks)
+Probing time = 2.04 sec. (568.83 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Elapsed time for symmetry detection = 50.94 sec. (10233.78 ticks)
+Elapsed time for symmetry detection = 118.48 sec. (20346.72 ticks)
+Found 5.289925e+29 symmetric permutations.
+Reduced MIP has 1489386 rows, 1177883 columns, and 32134624 nonzeros.
+Reduced MIP has 1170686 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 158.28 sec. (32555.11 ticks)

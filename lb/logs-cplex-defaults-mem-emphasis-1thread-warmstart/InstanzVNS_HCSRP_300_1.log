@@ -1,0 +1,262 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_1.txt
+Time limit: 7200
+Working directory: ./run.wSyVGpoU
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_1.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: Yes (mk2014)
+Trivial flow violations prevented generating 843369 variables.
+Additional cuts are disabled.
+Model exported.
+Starting BRKGA.
+Generation = 50, best solution =  6376.51, elapsed time = 11.331 secs.
+Generation = 100, best solution =  3296.86, elapsed time = 22.667 secs.
+Generation = 150, best solution =  2668.77, elapsed time = 34.022 secs.
+Generation = 200, best solution =  2501.43, elapsed time = 45.39 secs.
+Generation = 250, best solution =  2362.05, elapsed time = 56.753 secs.
+Generation = 300, best solution =  2345.84, elapsed time = 68.122 secs.
+Generation = 350, best solution =  2247.52, elapsed time = 79.509 secs.
+Generation = 400, best solution =  2200.2, elapsed time = 90.894 secs.
+Generation = 450, best solution =  2142.35, elapsed time = 102.281 secs.
+Generation = 500, best solution =  2128.33, elapsed time = 113.654 secs.
+Generation = 550, best solution =  2076.97, elapsed time = 125.042 secs.
+Generation = 600, best solution =  2036.98, elapsed time = 136.427 secs.
+BRKGA finished with solution value of 2036.98.
+Solving mip warm-start with constructive solution.
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               200
+Tried aggregator 4 times.
+MIP Presolve eliminated 43551 rows and 1069726 columns.
+MIP Presolve modified 9288 coefficients.
+Aggregator did 13 substitutions.
+Reduced MIP has 1309583 rows, 6657 columns, and 2619166 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 8.52 sec. (4204.03 ticks)
+Tried aggregator 2 times.
+Detecting symmetries...
+MIP Presolve eliminated 103 rows and 0 columns.
+Aggregator did 37 substitutions.
+Reduced MIP has 1309443 rows, 6620 columns, and 2618886 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 4.49 sec. (1401.62 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 1.48 sec. (1282.78 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0     2036.9794     2036.9794        3    0.00%
+Elapsed time = 18.12 sec. (8214.19 ticks, tree = 0.00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =   18.19 sec. (8249.19 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =   18.19 sec. (8249.19 ticks)
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.wSyVGpoU/model.lp' read.
+Read time = 17.34 sec. (468.31 ticks)
+CPLEX> Solution file './run.wSyVGpoU/initial.sol' read.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+1 of 1 MIP starts provided solutions.
+MIP start 'incumbent' defined initial solution with objective 2036.9794.
+Tried aggregator 1 time.
+MIP Presolve eliminated 36787 rows and 8396 columns.
+MIP Presolve modified 9924 coefficients.
+Reduced MIP has 1316360 rows, 1068000 columns, and 26205776 nonzeros.
+Reduced MIP has 1061330 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 21.56 sec. (9149.95 ticks)
+Probing time = 1.02 sec. (409.97 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 1316360 rows, 1068000 columns, and 26205776 nonzeros.
+Reduced MIP has 1061330 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 72.51 sec. (16193.52 ticks)
+Probing time = 1.00 sec. (406.76 ticks)
+Clique table members: 325884.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 7.56 sec. (5382.80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2036.9794        0.0000           100.00%
+      0     0      444.1442   824     2036.9794      444.1442     9184   78.20%
+      0     0      444.5711   871     2036.9794     Cuts: 498    10021   78.17%
+      0     0      449.6546   863     2036.9794    Cuts: 1010    10726   77.93%
+      0     0      451.7219   902     2036.9794     Cuts: 864    11463   77.82%
+      0     0      460.6583   881     2036.9794    Cuts: 1296    12234   77.39%
+      0     0      467.6011   866     2036.9794     Cuts: 991    12959   77.04%
+      0     0      470.8295   853     2036.9794     Cuts: 921    13732   76.89%
+      0     0      474.6817   919     2036.9794    Cuts: 1145    14410   76.70%
+      0     0      477.9929   862     2036.9794     Cuts: 961    15287   76.53%
+      0     0      482.4948   939     2036.9794     Cuts: 568    16233   76.31%
+      0     0      485.9592   928     2036.9794    Cuts: 1447    17098   76.14%
+      0     0      490.1177   909     2036.9794    Cuts: 1435    18282   75.94%
+      0     0      492.5312   908     2036.9794    Cuts: 1140    19180   75.82%
+      0     0      495.8320   943     2036.9794    Cuts: 1340    20335   75.66%
+      0     0      497.8094   935     2036.9794    Cuts: 1937    21428   75.56%
+      0     0      498.8043   977     2036.9794    Cuts: 1453    22647   75.51%
+      0     0      501.4513   938     2036.9794    Cuts: 1332    24201   75.38%
+      0     0      507.9459   971     2036.9794    Cuts: 2194    26095   75.06%
+      0     0      511.7740  1029     2036.9794    Cuts: 1104    28486   74.88%
+      0     0      517.3047  1016     2036.9794    Cuts: 3197    31247   74.60%
+      0     0      520.8362  1058     2036.9794    Cuts: 2945    34794   74.43%
+      0     0      524.6427  1033     2036.9794    Cuts: 4396    36365   74.24%
+      0     0      525.9627  1027     2036.9794    Cuts: 4551    37777   74.18%
+      0     0      527.9892  1097     2036.9794    Cuts: 4184    39238   74.08%
+      0     0      530.3722  1109     2036.9794    Cuts: 3829    40752   73.96%
+      0     0      531.7394  1145     2036.9794    Cuts: 4336    42859   73.90%
+      0     0      533.9775  1133     2036.9794    Cuts: 2972    44523   73.79%
+      0     0      536.1675  1121     2036.9794    Cuts: 3921    47746   73.68%
+      0     0      537.4739  1134     2036.9794    Cuts: 3469    49165   73.61%
+      0     0      540.9971  1133     2036.9794    Cuts: 4384    52241   73.44%
+      0     0      543.6607  1295     2036.9794    Cuts: 4427    53902   73.31%
+      0     0      545.1533  1256     2036.9794    Cuts: 4194    55605   73.24%
+      0     0      547.8733  1323     2036.9794    Cuts: 3580    57220   73.10%
+      0     0      550.0568  1332     2036.9794    Cuts: 4510    58799   73.00%
+      0     0      550.5163  1463     2036.9794    Cuts: 3899    60695   72.97%
+      0     0      552.5063  1445     2036.9794    Cuts: 2923    62527   72.88%
+      0     0      554.3728  1624     2036.9794    Cuts: 2354    64426   72.78%
+      0     0      556.6004  1482     2036.9794    Cuts: 2428    66643   72.68%
+      0     0      560.7208  1462     2036.9794    Cuts: 4141    68987   72.47%
+      0     0      564.4057  1600     2036.9794    Cuts: 2862    70980   72.29%
+      0     0      565.4353  1561     2036.9794    Cuts: 3462    72381   72.24%
+      0     0      568.4205  1746     2036.9794    Cuts: 4274    74752   72.09%
+      0     0      569.5757  1876     2036.9794    Cuts: 2045    76320   72.04%
+      0     0      570.3026  1911     2036.9794    Cuts: 5452    78710   72.00%
+      0     0      571.2908  2019     2036.9794    Cuts: 5760    80413   71.95%
+      0     0      573.9146  1994     2036.9794    Cuts: 7863    83134   71.83%
+      0     0      577.0322  2039     2036.9794    Cuts: 7566    85782   71.67%
+      0     0      579.3152  2134     2036.9794    Cuts: 3846    87842   71.56%
+      0     0      580.9391  2273     2036.9794    Cuts: 2154    90326   71.48%
+      0     0      581.5122  2300     2036.9794    Cuts: 4105    91643   71.45%
+      0     0      581.9399  2232     2036.9794    Cuts: 2346    93262   71.43%
+      0     0      582.5247  2209     2036.9794    Cuts: 3634    93950   71.40%
+      0     0      582.8837  2286     2036.9794    Cuts: 1891    94841   71.38%
+      0     0      583.3818  2321     2036.9794    Cuts: 4267    95827   71.36%
+      0     0      584.4857  2360     2036.9794    Cuts: 4299    96593   71.31%
+      0     0      585.3789  2734     2036.9794    Cuts: 4427    97690   71.26%
+      0     0      586.3237  2797     2036.9794    Cuts: 1467    98747   71.22%
+      0     0      586.9387  2870     2036.9794    Cuts: 2564    99591   71.19%
+      0     0      587.6393  2707     2036.9794    Cuts: 3423   100468   71.15%
+      0     0      588.4593  2699     2036.9794    Cuts: 2759   101084   71.11%
+      0     0      589.8703  2605     2036.9794    Cuts: 1872   101911   71.04%
+      0     0      590.3831  2746     2036.9794    Cuts: 4151   102450   71.02%
+      0     0      590.9691  2716     2036.9794    Cuts: 3280   103239   70.99%
+      0     0      591.7535  2966     2036.9794    Cuts: 6166   104376   70.95%
+      0     0      592.3163  2908     2036.9794    Cuts: 5064   105157   70.92%
+      0     0      593.1577  2920     2036.9794    Cuts: 4464   105938   70.88%
+      0     0      593.2465  2766     2036.9794    Cuts: 4327   106571   70.88%
+      0     0      593.8758  2809     2036.9794    Cuts: 5021   107396   70.85%
+      0     0      594.3415  2998     2036.9794    Cuts: 8061   107904   70.82%
+      0     0      595.0838  3156     2036.9794    Cuts: 3999   108735   70.79%
+      0     0      595.5197  3225     2036.9794    Cuts: 3625   109433   70.76%
+      0     0      596.4051  3993     2036.9794    Cuts: 3991   110460   70.72%
+      0     0      597.4777  3791     2036.9794    Cuts: 7696   111101   70.67%
+      0     0      597.6963  3708     2036.9794    Cuts: 2751   111660   70.66%
+      0     0      597.8722  3584     2036.9794    Cuts: 4718   112332   70.65%
+      0     0      598.5940  3948     2036.9794    Cuts: 2513   113362   70.61%
+      0     0      599.1610  4249     2036.9794    Cuts: 2868   114289   70.59%
+      0     0      600.8059  4236     2036.9794    Cuts: 3096   115045   70.51%
+      0     0      601.6240  4195     2036.9794    Cuts: 3197   115507   70.46%
+      0     0      602.1820  4672     2036.9794    Cuts: 3672   116251   70.44%
+Elapsed time = 51.33 sec. (10000.03 ticks) for 1313658 of 1336532 candidates for flow covers
+      0     0      602.7493  4889     2036.9794    Cuts: 1840   116889   70.41%
+Elapsed time = 51.51 sec. (10000.08 ticks) for 1312485 of 1336567 candidates for flow covers
+      0     0      602.9382  4846     2036.9794    Cuts: 3330   117278   70.40%
+Elapsed time = 51.75 sec. (10000.00 ticks) for 1312504 of 1336600 candidates for flow covers
+      0     0      602.9756  4901     2036.9794    Cuts: 2206   117803   70.40%
+Heuristic still looking.
+      0     2      602.9756  4901     2036.9794      602.9756   117803   70.40%
+Elapsed time = 6179.33 sec. (2103268.33 ticks, tree = 0.01 MB, solutions = 1)
+      1     3      603.3825  4831     2036.9794      602.9756   118138   70.40%
+      2     4      603.0768  4840     2036.9794      603.0768   118464   70.39%
+      4     6      603.0940  4762     2036.9794      603.0768   118512   70.39%
+      5     7      603.1285  4767     2036.9794      603.0768   118543   70.39%
+      6     8      603.3305  4762     2036.9794      603.0768   118677   70.39%
+      7     9      603.2023  4741     2036.9794      603.0768   118759   70.39%
+      8    10      603.3188  4745     2036.9794      603.0768   118984   70.39%
+      9    11      603.4842  4683     2036.9794      603.0768   119196   70.39%
+     10    12      603.5428  4660     2036.9794      603.0768   119446   70.39%
+     11    13      603.8651  4741     2036.9794      603.0768   119921   70.39%
+Elapsed time = 6245.29 sec. (2127671.85 ticks, tree = 4.23 MB, solutions = 1)
+     12    14      605.2845  4590     2036.9794      603.0768   121418   70.39%
+     13    15      603.8651  4740     2036.9794      603.0768   121453   70.39%
+     14    16      604.9460  4680     2036.9794      603.0768   124196   70.39%
+     15    17      617.5009  4640     2036.9794      603.0768   125856   70.39%
+     16    18      605.0938  4684     2036.9794      603.0768   125989   70.39%
+     17    19      605.9272  4546     2036.9794      603.0768   127291   70.39%
+     18    20      606.1019  4575     2036.9794      603.0768   127792   70.39%
+     19    21      606.1137  4527     2036.9794      603.0768   128035   70.39%
+     20    22      606.1137  4528     2036.9794      603.0768   128040   70.39%
+     21    23      606.9769  4497     2036.9794      603.0768   129504   70.39%
+Elapsed time = 6559.59 sec. (2259826.13 ticks, tree = 9.02 MB, solutions = 1)
+     22    24      606.1137  4525     2036.9794      603.0768   130117   70.39%
+     23    25      606.1369  4524     2036.9794      603.0768   131419   70.39%
+     24    26      606.2537  4515     2036.9794      603.0768   132855   70.39%
+     25    27      606.2537  4514     2036.9794      603.0768   133816   70.39%
+     28    30      606.5148  4502     2036.9794      603.0768   133907   70.39%
+     29    31      606.5670  4472     2036.9794      603.0768   134902   70.39%
+     30    32      606.7386  4453     2036.9794      603.0768   135853   70.39%
+     31    33      606.7386  4452     2036.9794      603.0768   136165   70.39%
+     32    34      606.7388  4428     2036.9794      603.0768   136336   70.39%
+     34    36      606.8296  4398     2036.9794      603.0768   137585   70.39%
+Elapsed time = 7148.33 sec. (2479127.48 ticks, tree = 14.87 MB, solutions = 1)
+
+Clique cuts applied:  1
+Implied bound cuts applied:  3159
+Flow cuts applied:  983
+Mixed integer rounding cuts applied:  15529
+Zero-half cuts applied:  609
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             = 6138.58 sec. (2067418.91 ticks)
+Sequential b&c:
+  Real time             = 1061.62 sec. (431792.52 ticks)
+                          ------------
+Total (root+branch&cut) = 7200.20 sec. (2499211.43 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  2.0369793633e+03
+Current MIP best bound =  6.0307681828e+02 (gap = 1433.9, 70.39%)
+Solution time = 7200.20 sec.  Iterations = 138418  Nodes = 35 (36)
+Deterministic time = 2499214.50 ticks  (347.10 ticks/sec)
+
+CPLEX> Incumbent solution written to file './run.wSyVGpoU/final.sol'.
+CPLEX> 

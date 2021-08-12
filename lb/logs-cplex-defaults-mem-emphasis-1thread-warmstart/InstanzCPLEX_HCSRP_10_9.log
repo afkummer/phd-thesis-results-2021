@@ -1,0 +1,158 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_9.txt
+Time limit: 7200
+Working directory: ./run.OsyUbBg1
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_9.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: Yes (mk2014)
+Trivial flow violations prevented generating 112 variables.
+Additional cuts are disabled.
+Model exported.
+Starting BRKGA.
+Generation = 50, best solution =  234.211, elapsed time = 0.033 secs.
+Generation = 100, best solution =  234.211, elapsed time = 0.064 secs.
+Generation = 150, best solution =  234.211, elapsed time = 0.095 secs.
+Generation = 200, best solution =  234.211, elapsed time = 0.126 secs.
+Generation = 250, best solution =  234.211, elapsed time = 0.158 secs.
+Generation = 300, best solution =  234.211, elapsed time = 0.189 secs.
+Generation = 350, best solution =  234.211, elapsed time = 0.22 secs.
+Generation = 400, best solution =  234.211, elapsed time = 0.251 secs.
+Generation = 450, best solution =  234.211, elapsed time = 0.282 secs.
+Generation = 500, best solution =  234.211, elapsed time = 0.314 secs.
+Generation = 550, best solution =  234.211, elapsed time = 0.345 secs.
+Generation = 600, best solution =  234.211, elapsed time = 0.376 secs.
+BRKGA finished with solution value of 234.211.
+Solving mip warm-start with constructive solution.
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               200
+Found incumbent of value 232417.353530 after 0.00 sec. (0.07 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 172 rows and 247 columns.
+Aggregator did 1 substitutions.
+Reduced MIP has 201 rows, 35 columns, and 402 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.51 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 201 rows, 35 columns, and 402 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.21 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.06 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       232417.3535      234.2109            99.90%
+*     0     0      integral     0      234.2109      234.2109        0    0.00%
+Elapsed time = 0.00 sec. (0.97 ticks, tree = 0.00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.98 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.98 ticks)
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.OsyUbBg1/model.lp' read.
+Read time = 0.00 sec. (0.04 ticks)
+CPLEX> Solution file './run.OsyUbBg1/initial.sol' read.
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+1 of 1 MIP starts provided solutions.
+MIP start 'incumbent' defined initial solution with objective 234.2109.
+Tried aggregator 1 time.
+MIP Presolve eliminated 131 rows and 64 columns.
+MIP Presolve modified 28 coefficients.
+Reduced MIP has 243 rows, 219 columns, and 1294 nonzeros.
+Reduced MIP has 183 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.97 ticks)
+Probing time = 0.00 sec. (0.64 ticks)
+Cover probing fixed 0 vars, tightened 37 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 1 rows and 0 columns.
+MIP Presolve modified 336 coefficients.
+Reduced MIP has 242 rows, 219 columns, and 1292 nonzeros.
+Reduced MIP has 183 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.32 ticks)
+Probing time = 0.00 sec. (0.75 ticks)
+Clique table members: 828.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.30 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          234.2109        0.0000           100.00%
+      0     0       93.9541    21      234.2109       93.9541       30   59.88%
+      0     0      123.9891    27      234.2109      Cuts: 28       62   47.06%
+      0     0      160.5598    18      234.2109      Cuts: 65       90   31.45%
+      0     0      163.4681    42      234.2109      Cuts: 38      127   30.20%
+      0     0      164.0129    37      234.2109      Cuts: 82      143   29.97%
+      0     0      164.6241    21      234.2109      Cuts: 14      161   29.71%
+      0     0      164.6499    15      234.2109      Cuts: 57      171   29.70%
+      0     0      165.6861    41      234.2109      Cuts: 19      198   29.26%
+      0     0      168.7485    45      234.2109      Cuts: 37      215   27.95%
+      0     0      168.7646    44      234.2109      Cuts: 16      226   27.94%
+      0     0      169.3021    43      234.2109      Cuts: 11      229   27.71%
+      0     0      169.3021    45      234.2109       Cuts: 5      233   27.71%
+      0     2      169.3021    44      234.2109      169.7775      233   27.51%
+Elapsed time = 0.06 sec. (30.65 ticks, tree = 0.01 MB, solutions = 1)
+*   829   331      integral     0      230.7261      186.6962    10892   19.08%
+*   920+  303                          223.3549      189.6311            15.10%
+    940   314      201.0265    45      223.3549      190.0894    12163   14.89%
+*  1020+  331                          222.2950      192.5739            13.37%
+
+Cover cuts applied:  3
+Implied bound cuts applied:  110
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  13
+Zero-half cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (30.66 ticks)
+Sequential b&c:
+  Real time             =    0.68 sec. (433.52 ticks)
+                          ------------
+Total (root+branch&cut) =    0.74 sec. (464.18 ticks)
+
+Solution pool: 4 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.2229502767e+02
+Solution time =    0.74 sec.  Iterations = 19826  Nodes = 1555
+Deterministic time = 464.18 ticks  (631.09 ticks/sec)
+
+CPLEX> Incumbent solution written to file './run.OsyUbBg1/final.sol'.
+CPLEX> 

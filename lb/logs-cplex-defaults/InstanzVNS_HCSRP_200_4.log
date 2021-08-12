@@ -1,0 +1,187 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_200_4.txt
+Time limit: 7200
+Working directory: ./run.eUQUVbIe
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_200_4.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 319825 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.eUQUVbIe/model.lp' read.
+Read time = 5.58 sec. (156.65 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+MIP Presolve eliminated 20623 rows and 5101 columns.
+MIP Presolve modified 3372 coefficients.
+Reduced MIP has 485489 rows, 393956 columns, and 8566203 nonzeros.
+Reduced MIP has 390211 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 5.85 sec. (3061.33 ticks)
+Probing time = 0.71 sec. (197.77 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 485489 rows, 393956 columns, and 8566203 nonzeros.
+Reduced MIP has 390211 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 21.10 sec. (5405.25 ticks)
+Probing time = 0.63 sec. (193.23 ticks)
+Clique table members: 280965.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 10.13 sec. (2587.49 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      379.1054   533                    379.1054     4867         
+      0     0      379.1054   537                   Cuts: 214     5123         
+      0     0      379.1054   545                   Cuts: 404     5582         
+      0     2      379.1054   545                    379.1054     5582         
+Elapsed time = 194.57 sec. (65011.07 ticks, tree = 0.02 MB, solutions = 0)
+      2     4      379.8130   543                    379.1054     5773         
+      5     7      379.8130   539                    379.1054     5788         
+      7     9      379.8130   537                    379.1054     5791         
+     10    10      379.8136   541                    379.1054     5821         
+     11    11      380.2073   554                    379.1054     6069         
+     13     5      379.8216   542                    379.1054     5821         
+     18    16      381.9645   548                    379.1054     6753         
+     22    20      380.3385   546                    379.1054     6496         
+     25    21      452.9148   546                    379.1054     6505         
+     42    27      383.2889   541                    379.1054     7923         
+Elapsed time = 219.83 sec. (69546.52 ticks, tree = 8.73 MB, solutions = 0)
+     54    42      383.7413   546                    379.1054     8393         
+     77    62      383.5708   541                    379.1054    10394         
+     96    88      382.1728   546                    379.1054    11313         
+    125    97      384.2877   549                    379.1054    11421         
+    161   112      383.4057   533                    379.1054    12040         
+    182   153      477.6245   545                    379.1054    12731         
+    206   172      382.7186   541                    379.1054    13050         
+    226   191      385.6096   531                    379.1054    13387         
+    253   223      520.7290   535                    379.1054    14037         
+    279   248      388.6593   531                    379.1054    14562         
+Elapsed time = 286.95 sec. (79480.74 ticks, tree = 221.48 MB, solutions = 0)
+    305   252      388.6593   532                    379.1054    14734         
+    329   280      389.4175   533                    379.1054    15583         
+    353   324      389.5547   532                    379.1054    16415         
+    374   328      389.6328   532                    379.1054    16526         
+    394   365      390.2984   519                    379.1054    17205         
+    418   365      386.3683   519                    379.1054    17194         
+    443   408      557.7933   520                    379.1054    18133         
+    468   435      386.1959   529                    379.1054    18582         
+    487   442      383.0310   532                    379.1054    18868         
+    511   451      393.8303   530                    379.1054    19093         
+Elapsed time = 352.37 sec. (89303.95 ticks, tree = 360.84 MB, solutions = 0)
+    533   493      531.7237   534                    379.1054    19899         
+    554   505      387.6879   530                    379.1054    20029         
+    570   485      384.2677   529                    379.1054    19845         
+    576   530      460.8103   513                    379.1054    21039         
+    601   562      391.2030   538                    379.1054    21591         
+    628   565      497.2037   537                    379.1054    21620         
+    652   556      388.7644   521                    379.1054    21493         
+    664   568      391.4355   532                    379.1054    21632         
+    680   584    infeasible                          379.1054    22048         
+    702   625      392.6675   511                    379.1054    22669         
+Elapsed time = 421.11 sec. (99160.03 ticks, tree = 518.25 MB, solutions = 0)
+    722   665      392.3874   516                    379.1054    23199         
+    741   669      392.6210   512                    379.1054    23224         
+    767   680      387.6879   524                    379.1054    23700         
+    795   738      389.5366   521                    379.1054    25055         
+    816   709      391.6702   528                    379.1054    24486         
+    846   726      399.3794   505                    379.1054    24650         
+    876   750      477.0950   516                    379.1054    25256         
+    901   770      467.2172   500                    379.1054    25422         
+    934   849      387.9197   521                    379.1054    27331         
+    960   831      392.9208   512                    379.1054    27078         
+Elapsed time = 488.00 sec. (109053.42 ticks, tree = 660.15 MB, solutions = 0)
+    990   842      389.6577   524                    379.1054    27552         
+   1006   862      388.3932   530                    379.1054    27595         
+   1030   906      389.5028   516                    379.1054    28831         
+   1050   889      397.4157   501                    379.1054    28696         
+   1071   984      393.1109   527                    379.1054    31185         
+   1095   991      442.9927   499                    379.1054    31448         
+   1114   969      390.6463   516                    379.1054    30871         
+   1137  1034      392.4887   527                    379.1054    33002         
+   1159  1067      391.7580   501                    379.1054    34334         
+   1178  1055      393.3831   516                    379.1054    34111         
+Elapsed time = 556.79 sec. (118995.96 ticks, tree = 866.68 MB, solutions = 0)
+   1200  1094      389.5028   517                    379.1054    34659         
+   1222  1116      401.1432   499                    379.1054    36319         
+   1242  1151      392.3734   500                    379.1054    37085         
+   1266  1131      393.6819   516                    379.1054    36768         
+   1295  1168      406.5134   499                    379.1054    37748         
+   1316  1157      495.2650   500                    379.1054    37341         
+   1330  1183      389.6375   508                    379.1054    37913         
+   1356  1256      389.6375   508                    379.1054    40184         
+   1384  1241      392.5094   520                    379.1054    40337         
+   1403  1291      393.9502   513                    379.1054    41651         
+Elapsed time = 622.04 sec. (128978.58 ticks, tree = 1253.98 MB, solutions = 0)
+   1430  1285      421.7318   501                    379.1054    41538         
+   1453  1356      389.8341   506                    379.1054    43760         
+   1468  1331      423.5800   519                    379.1054    42966         
+   1493  1357      579.5713   506                    379.1054    43769         
+   1515  1359      574.5148   504                    379.1054    43806         
+   1533  1374      474.4504   496                    379.1054    44655         
+   1559  1406      400.5884   529                    379.1054    45378         
+   1582  1460      430.6249   505                    379.1054    47346         
+   1604  1462      431.0630   501                    379.1054    47470         
+   1624  1465      431.1690   509                    379.1054    47560         
+Elapsed time = 690.73 sec. (138778.86 ticks, tree = 1292.15 MB, solutions = 0)
+   1640  1483      557.8256   515                    379.1054    48607         
+   1660  1509      397.4351   498                    379.1054    49072         
+   1674  1513      397.4351   500                    379.1054    49206         
+   1685  1527      393.7005   515                    379.1054    50004         
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 485489 rows, 393956 columns, and 8566203 nonzeros.
+Reduced MIP has 390211 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 3.92 sec. (2110.09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 485489 rows, 393956 columns, and 8566203 nonzeros.
+Reduced MIP has 390211 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 21.08 sec. (5516.41 ticks)
+Represolve time = 31.14 sec. (9812.66 ticks)
+   1692     0      383.1508   559                   Cuts: 379    58844         
+   1692     0      386.5758   561                   Cuts: 386    59432         
+   1692     0      390.6915   558                   Cuts: 383    60032         
+   1692     0      393.7164   579                   Cuts: 402    60748         
+   1692     0      397.8174   603                   Cuts: 412    61631         
+   1692     0      403.7395   606                   Cuts: 383    62714         
+   1692     0      407.0853   603                   Cuts: 390    63706         
+   1692     0      409.4832   598                   Cuts: 360    64720         
+   1692     0      411.2189   623                   Cuts: 356    65590         
+   1692     0      416.6698   623                   Cuts: 365    67552         
+   1692     0      423.5619   660                   Cuts: 338    69574         
+   1692     0      430.7620   626                   Cuts: 386    71958         
+   1692     0      434.3982   700                   Cuts: 352    73347         
+   1692     0      442.1831   860                   Cuts: 384    76350         
+   1692     0      445.8836   867                   Cuts: 402    78751         
+   1692     0      447.8174   905                   Cuts: 406    80863         
+   1692     0      449.3641   936                   Cuts: 392    83271         
+   1692     0      453.5792  1038                   Cuts: 428    87439         

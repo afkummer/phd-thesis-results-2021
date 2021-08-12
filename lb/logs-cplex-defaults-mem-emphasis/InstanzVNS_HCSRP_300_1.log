@@ -1,0 +1,91 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_1.txt
+Time limit: 7200
+Working directory: ./run.u4xC1A2J
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_300_1.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 843369 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.u4xC1A2J/model.lp' read.
+Read time = 17.22 sec. (468.31 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+MIP Presolve eliminated 36787 rows and 8396 columns.
+MIP Presolve modified 9924 coefficients.
+Reduced MIP has 1316360 rows, 1068000 columns, and 26205776 nonzeros.
+Reduced MIP has 1061330 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 21.92 sec. (9149.95 ticks)
+Probing time = 1.00 sec. (409.97 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 1316360 rows, 1068000 columns, and 26205776 nonzeros.
+Reduced MIP has 1061330 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 74.35 sec. (16193.52 ticks)
+Probing time = 1.17 sec. (406.76 ticks)
+Clique table members: 325884.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 19.15 sec. (5382.80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      444.1442   824                    444.1442     9184         
+      0     0      444.5632   869                   Cuts: 507    10011         
+      0     0      449.6550   857                   Cuts: 528    10998         
+      0     0      455.3130   894                   Cuts: 501    12051         
+      0     0      464.6552   920                   Cuts: 511    13195         
+      0     0      470.1772   904                   Cuts: 502    14203         
+      0     0      475.6228   893                   Cuts: 512    15351         
+      0     0      480.1653   878                   Cuts: 482    16875         
+      0     0      483.6898   921                   Cuts: 515    18210         
+      0     0      487.2729   920                   Cuts: 503    19642         
+      0     0      490.0301  1007                   Cuts: 508    21476         
+      0     0      494.4831   970                   Cuts: 527    23243         
+      0     0      499.2986  1039                   Cuts: 501    25639         
+      0     0      503.8924  1016                   Cuts: 504    27897         
+      0     0      507.6439   979                   Cuts: 499    29835         
+      0     0      512.8306   939                   Cuts: 470    31884         
+      0     0      517.3230  1037                   Cuts: 461    34148         
+      0     0      523.9350  1088                   Cuts: 473    36963         
+      0     0      526.7525  1135                   Cuts: 506    39235         
+      0     0      527.9616  1206                   Cuts: 474    41475         
+      0     0      533.3686  1211                   Cuts: 490    44728         
+      0     0      537.3605  1330                   Cuts: 461    47714         
+      0     0      538.7857  1364                   Cuts: 513    49417         
+      0     0      540.6740  1322                   Cuts: 460    52910         
+      0     0      544.5125  1394                   Cuts: 476    55257         
+      0     0      546.4772  1428                   Cuts: 498    57017         
+      0     0      548.6477  1491                   Cuts: 490    59620         
+      0     0      553.4716  1599                   Cuts: 456    63148         
+      0     0      556.8020  1675                   Cuts: 484    66239         
+      0     0      559.9177  1673                   Cuts: 451    69143         
