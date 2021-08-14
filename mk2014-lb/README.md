@@ -2,7 +2,7 @@
 
 This directory contains data regarding experiments with Mankowska et al (2014) MIP model and dataset. Most content are logfiles and raw CSVs, as described below.
 
-For a summary of results, please c.f. file [comparison-cplex-configs.ods](comparison-cplex-configs.ods).
+For a summary of results, please c.f. [comparison-cplex-configs.ods](comparison-cplex-configs.ods).
 
 ## Description of the experiments
 
