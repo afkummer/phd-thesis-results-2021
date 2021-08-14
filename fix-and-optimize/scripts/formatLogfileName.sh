@@ -14,7 +14,7 @@ printf "   Basename: %s\n" $file
 seed="$(xzcat $1 | grep 'Seed: ' | cut -d ' ' -f 3)"
 printf "   Seed: %s\n" $seed
 
-newname="${file}-${seed}.log.xz"
+newname="$(dirname $1)/${file}.${seed}.log.xz"
 echo "Moving $1 to $newname"
-#mv $1 $newname
+git mv $1 $newname
 
