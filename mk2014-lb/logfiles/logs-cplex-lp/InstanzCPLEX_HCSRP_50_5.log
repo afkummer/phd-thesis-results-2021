@@ -1,0 +1,66 @@
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: work/gecco2020-brkga/instances-HHCRSP/InstanzCPLEX_HCSRP_50_5.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 6497 variables.
+Additional cuts are disabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+mv: cannot stat 'initial.sol': No such file or directory
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for time limit in seconds: 10
+CPLEX> Problem './run.i2oocO2J/model.lp' read.
+Read time = 0.03 sec. (1.27 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               10
+Tried aggregator 1 time.
+LP Presolve eliminated 1280 rows and 313 columns.
+Reduced LP has 6875 rows, 5777 columns, and 55788 nonzeros.
+Presolve time = 0.03 sec. (16.04 ticks)
+Compression time = 0.04 sec. (0.01 ticks)
+Compression reduced 1.22 MB A matrix to 0.28 MB
+Symmetry aggregator did 6753 additional substitutions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            63.537992
+Iteration:   168   Dual objective     =           215.641500
+Removing shift (1).
+
+Dual crossover.
+  Dual:  Fixing 98 variables.
+       97 DMoves:  Infeasibility  2.65402087e-14  Objective  2.15643841e+02
+        0 DMoves:  Infeasibility  1.17684420e-14  Objective  2.15643841e+02
+  Dual:  Pushed 2, exchanged 96.
+  Primal:  Fixing 38 variables.
+       37 PMoves:  Infeasibility  1.10978934e-15  Objective  2.15643841e+02
+        0 PMoves:  Infeasibility  1.03606360e-15  Objective  2.15643841e+02
+  Primal:  Pushed 18, exchanged 20.
+
+Dual simplex - Optimal:  Objective =  2.1564384093e+02
+Solution time =    0.10 sec.  Iterations = 176 (0)
+Deterministic time = 33.26 ticks  (339.65 ticks/sec)
+
+CPLEX> Solution written to file './run.i2oocO2J/final.sol'.
+CPLEX>
