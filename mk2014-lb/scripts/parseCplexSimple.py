@@ -16,6 +16,7 @@ if __name__ == "__main__":
    time = "NA"
    iters = "NA"
    nodes = "NA"
+   rows = "NA"
 
    with open(argv[1]) as fid:
       for line in fid:
@@ -82,6 +83,13 @@ if __name__ == "__main__":
                lb = tks[-2]
                ub = tks[-3]
                nodes = tks[0][1:]
+
+   # Indicates failure to build the model.
+   if rows == "NA":
+      status="FAIL"
+      cols = "NA"
+      nzz = "NA"
+
 
    if optFound:
       lb = ub

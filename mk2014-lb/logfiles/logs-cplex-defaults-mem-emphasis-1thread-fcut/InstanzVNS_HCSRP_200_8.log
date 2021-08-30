@@ -1,0 +1,121 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_200_8.txt
+Time limit: 7200
+Working directory: ./run.vUvCTqef
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzVNS_HCSRP_200_8.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 313996 variables.
+Fractional cycle elimination constraints enabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.vUvCTqef/model.lp' read.
+Read time = 23.58 sec. (726.90 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Presolve has eliminated 18650 rows and 4114 columns...
+Presolve has eliminated 18650 rows and 4114 columns...
+Tried aggregator 1 time.
+MIP Presolve eliminated 18650 rows and 4114 columns.
+MIP Presolve modified 3000 coefficients.
+Reduced MIP has 734918 rows, 331897 columns, and 49274934 nonzeros.
+Reduced MIP has 328486 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 48.99 sec. (24754.22 ticks)
+Probing time = 1.34 sec. (530.86 ticks)
+Presolve has eliminated 0 rows and 0 columns...
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 734918 rows, 331897 columns, and 49274934 nonzeros.
+Reduced MIP has 328486 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 60.15 sec. (27524.00 ticks)
+Probing time = 1.43 sec. (564.24 ticks)
+Clique table members: 117474.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 260.55 sec. (90722.61 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      449.7632   895                    449.7632    31168         
+      0     0      450.4117   906                   Cuts: 485    32574         
+      0     0      453.4125   915                   Cuts: 454    34581         
+      0     0      455.9400   854                   Cuts: 443    37195         
+      0     0      460.2307   863                   Cuts: 401    39837         
+      0     0      465.9807   918                   Cuts: 386    42210         
+      0     0      470.7611   940                   Cuts: 391    44516         
+      0     0      475.6751  1006                   Cuts: 388    47548         
+      0     0      481.9398  1129                   Cuts: 425    51317         
+      0     0      486.4304  1162                   Cuts: 414    54951         
+      0     0      490.8011  1197                   Cuts: 406    58249         
+      0     0      493.6302  1045                   Cuts: 416    63272         
+      0     0      498.0513  1211                   Cuts: 373    66784         
+      0     0      500.7167  1180                   Cuts: 416    71485         
+      0     0      503.7562  1167                   Cuts: 376    74558         
+      0     0      505.5437  1254                   Cuts: 363    79009         
+      0     0      507.8567  1260                   Cuts: 370    84841         
+      0     0      510.0532  1516                   Cuts: 380    88400         
+      0     0      511.6434  1583                   Cuts: 414    93638         
+      0     0      517.0838  1823                   Cuts: 385    99322         
+      0     0      518.8136  1653                   Cuts: 425   103460         
+      0     0      521.7840  1922                   Cuts: 376   110024         
+      0     0      523.6150  1848                   Cuts: 401   113675         
+      0     0      526.1789  1823                   Cuts: 382   118429         
+      0     0      527.8270  1596                   Cuts: 325   121886         
+      0     0      528.9465  1968                   Cuts: 290   124797         
+      0     0      530.9643  1967                   Cuts: 357   132148         
+      0     0      533.1774  2361                   Cuts: 373   138419         
+      0     0      534.4474  2819                   Cuts: 384   144028         
+      0     0      536.5763  3429                   Cuts: 417   149934         
+      0     0      538.8631  4014                   Cuts: 435   159040         
+      0     0      540.0508  4317                   Cuts: 417   163564         
+
+Implied bound cuts applied:  1187
+Flow cuts applied:  331
+Mixed integer rounding cuts applied:  3797
+Zero-half cuts applied:  11
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             = 7200.19 sec. (2356758.81 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) = 7200.19 sec. (2356758.81 ticks)
+
+
+MIP - Time limit exceeded, no integer solution.
+Current MIP best bound =  5.4005078670e+02 (gap is infinite)
+Solution time = 7200.19 sec.  Iterations = 163564  Nodes = 0 (1)
+Deterministic time = 2356759.77 ticks  (327.32 ticks/sec)
+
+CPLEX> CPLEX Error  1217: No solution exists.
+No file written.
+CPLEX> 

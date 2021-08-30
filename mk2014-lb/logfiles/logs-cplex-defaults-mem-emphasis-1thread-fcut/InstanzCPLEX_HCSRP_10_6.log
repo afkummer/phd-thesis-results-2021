@@ -1,0 +1,105 @@
+Instance: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_6.txt
+Time limit: 7200
+Working directory: ./run.N0Fguabs
+
+
+Generating model and initial solution...
+#######################################
+### Exact MIP solver for the HHCRSP ###
+#######################################
+-- Instance file: /home/alberto/work/doct-ufrgs-thesis/mankowska2014/instances-HHCRSP/InstanzCPLEX_HCSRP_10_6.txt
+-- Max threads: 1
+-- Time limit: 200 seconds
+-- Use initial solution: No
+Trivial flow violations prevented generating 135 variables.
+Fractional cycle elimination constraints enabled.
+Model exported.
+SKIP_OPT flag set. Exiting.
+
+
+Invoking CPLEX...
+
+Welcome to IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 20.1.0.0
+  with Simplex, Mixed Integer & Barrier Optimizers
+5725-A06 5725-A29 5724-Y48 5724-Y49 5724-Y54 5724-Y55 5655-Y21
+Copyright IBM Corp. 1988, 2020.  All Rights Reserved.
+
+Type 'help' for a list of available commands.
+Type 'help' followed by a command name for more
+information on commands.
+
+CPLEX> New value for seed to initialize the random number generator: 1
+CPLEX> New value for reduced memory emphasis: yes
+CPLEX> New value for default parallel thread count: 1
+CPLEX> New value for time limit in seconds: 7200
+CPLEX> Problem './run.N0Fguabs/model.lp' read.
+Read time = 0.00 sec. (0.04 ticks)
+CPLEX> Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_Emphasis_Memory                         1
+CPXPARAM_RandomSeed                              1
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+MIP Presolve eliminated 106 rows and 51 columns.
+MIP Presolve modified 78 coefficients.
+Reduced MIP has 251 rows, 150 columns, and 1273 nonzeros.
+Reduced MIP has 118 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.97 ticks)
+Probing time = 0.00 sec. (0.37 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 2 rows and 0 columns.
+Reduced MIP has 249 rows, 150 columns, and 1269 nonzeros.
+Reduced MIP has 118 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.72 ticks)
+Probing time = 0.00 sec. (0.42 ticks)
+Clique table members: 290.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.55 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      109.6717    36                    109.6717       65         
+      0     0      113.4100    31                    Cuts: 37       98         
+      0     0      117.8050    24                    Cuts: 22      137         
+      0     0      148.6474    23                    Cuts: 26      168         
+      0     0      155.1328    36                    Cuts: 28      199         
+      0     0      160.6403    26                    Cuts: 28      227         
+      0     0      163.4236    25                    Cuts: 12      236         
+      0     0      165.8580    31                    Cuts: 12      246         
+      0     0      167.8476    35                     Cuts: 9      256         
+      0     0      167.8476    40                     Cuts: 6      260         
+      0     0      168.8056    35                    Cuts: 15      266         
+      0     0      168.9862    38                    Cuts: 23      280         
+      0     0      168.9862    36                    Cuts: 12      290         
+*     0+    0                          307.6372      168.9862            45.07%
+      0     2      168.9862    36      307.6372      169.2315      290   44.99%
+Elapsed time = 0.08 sec. (43.90 ticks, tree = 0.01 MB, solutions = 1)
+*    20+   14                          200.0992      172.4197            13.83%
+
+Cover cuts applied:  2
+Implied bound cuts applied:  21
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  36
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (43.89 ticks)
+Sequential b&c:
+  Real time             =    0.07 sec. (47.15 ticks)
+                          ------------
+Total (root+branch&cut) =    0.15 sec. (91.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.0009915890e+02
+Solution time =    0.15 sec.  Iterations = 2149  Nodes = 251
+Deterministic time = 91.04 ticks  (592.22 ticks/sec)
+
+CPLEX> Incumbent solution written to file './run.N0Fguabs/final.sol'.
+CPLEX> 
