@@ -1,0 +1,187 @@
+*********************************************
+ Instance: data/InstanzVNS_HCSRP_200_1.txt
+ UB: 999999999
+ B&B tree: ./bbTree-VWGEr9nZ.vrp
+*********************************************
+--- VRPSolver-based algorithm for VRPTW (HHCRSP) ---
+Data path: data/InstanzVNS_HCSRP_200_1.txt
+Upper bound known: 1.0e9
+Number of patients: 200
+Number of vehicles: 30
+Expanded number of nodes: 260
+
+Building VRPTW model...
+
+Set cutoff of 1.0e9.
+
+Optimizing the problem...
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.4.1, 24/03/2021. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+Paper: dx.doi.org/10.1007/s10107-020-01523-z
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v053, 24/03/2021, © Inria Bordeaux, France (license expires 1/12/2022)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 7200
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 6
+RCSPhardTimeThresholdInPricing = 15
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 2
+RCSPapplyReducedCostFixing = 1
+RCSPredCostFixingFalseGap = 0
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 5000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 8
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 5
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.02
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 100
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.2
+StrongBranchingPhaseTwoCandidatesNumber = 5
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.02
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+09, TIME = 0h0m0s12t = 12
+Model is built TIME = 0h1m10s28t = 7028
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+09 ], TIME = 0h1m10s34t = 7034
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 580 art. vars. (580 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=1041.74> <Mt= 0.48> <Spt=969.11> <nCl=9000> <DB=-1179717900650.9514> <Mlp=18653360182.9708> <PB=1e+09> 
+<DWph=2> <it= 20> <et=1769.80> <Mt= 1.10> <Spt=726.54> <nCl=8070> <DB=-841587091814.7711> <Mlp=2338173333.9367> <PB=1e+09> 
+<DWph=2> <it= 30> <et=2442.61> <Mt= 1.10> <Spt=671.36> <nCl=6000> <DB=-759929574904.0361> <Mlp=48362775.7971> <PB=1e+09> 
+<DWph=2> <it= 40> <et=3228.99> <Mt= 0.46> <Spt=785.57> <nCl=2596> <DB=-72416099.9620> <Mlp= 7052.7864> <PB=1e+09> 
+<DWph=2> <it= 50> <et=3878.26> <Mt= 0.90> <Spt=647.88> <nCl=8254> <DB=-61443.0055> <Mlp= 1173.5293> <PB=1e+09> 
+<DWph=2> <it= 60> <et=4571.03> <Mt= 0.91> <Spt=691.49> <nCl=8970> <DB=-40897.1353> <Mlp= 1076.8918> <PB=1e+09> 
+<DWph=2> <it= 70> <et=5228.84> <Mt= 1.07> <Spt=656.08> <nCl=8970> <DB=-29235.5720> <Mlp=  994.1982> <PB=1e+09> 
+<DWph=2> <it= 80> <et=5931.24> <Mt= 0.92> <Spt=700.92> <nCl=8762> <DB=-24174.5557> <Mlp=  932.0597> <PB=1e+09> 
+<DWph=2> <it= 90> <et=6641.55> <Mt= 0.96> <Spt=708.51> <nCl=8859> <DB=-24466.1892> <Mlp=  867.4149> <PB=1e+09> 
+<DWph=2> <it=100> <et=7333.84> <Mt= 0.97> <Spt=690.76> <nCl=8412> <DB=-17415.0358> <Mlp=  820.8532> <PB=1e+09> 
+Global time limit is reached during column generation
+ColGenEvalAlg final dual bound: -1e+12 (rounded: -1e+12)
+SEARCH IS INTERRUPTED as the time limit is reached. 
+************************************************************************************************
+Search is finished, global bounds : [ -1e+12 , 1e+09 ], TIME = 2h2m17s22t = 733722
+************************************************************************************************
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: mankowska & 0 & 1.0e9 & -1000000000000.00 & 7337.14 & 1 & 0.00 & -- & 7337.22 \\
+
+Optimization finished!
+Time consumed (build+solve): 7572.087168686 secs
+Solver status: UserLimit
+A solutions was found? false
+
+
+# Solution for data/InstanzVNS_HCSRP_200_1.txt
+# Cost = 0.0
+# <vehicle>
+# <node ID> <patient ID> <svc ID>
+# Routes finish with '-1'
+1
+1 1 1
+-1
+2
+1 1 1
+-1
+3
+1 1 1
+-1
+4
+1 1 1
+-1
+5
+1 1 1
+-1
+6
+1 1 1
+-1
+7
+1 1 1
+-1
+8
+1 1 1
+-1
+9
+1 1 1
+-1
+10
+1 1 1
+-1
+11
+1 1 1
+-1
+12
+1 1 1
+-1
+13
+1 1 1
+-1
+14
+1 1 1
+-1
+15
+1 1 1
+-1
+16
+1 1 1
+-1
+17
+1 1 1
+-1
+18
+1 1 1
+-1
+19
+1 1 1
+-1
+20
+1 1 1
+-1
+21
+1 1 1
+-1
+22
+1 1 1
+-1
+23
+1 1 1
+-1
+24
+1 1 1
+-1
+25
+1 1 1
+-1
+26
+1 1 1
+-1
+27
+1 1 1
+-1
+28
+1 1 1
+-1
+29
+1 1 1
+-1
+30
+1 1 1
+-1

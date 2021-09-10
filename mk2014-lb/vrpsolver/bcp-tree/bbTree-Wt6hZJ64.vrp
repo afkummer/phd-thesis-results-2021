@@ -1,0 +1,29 @@
+##Command to get a nice layout: dot -Tpdf thisfile > thisfile.pdf
+
+digraph master_BaP_Tree {
+edge[fontname = "Courier", fontsize = 10];
+n1 [label="N_1 (20m11s) \n[231.89,1000000000.00]"];
+n2 [label="N_2 (30m2s) \n[232.20,1000000000.00]"];
+n1 -> n2 [ label = " x_4_18_2 <= 0  " ];
+n3 [label="N_3 (32m37s) \n[232.21,1000000000.00]"];
+n1 -> n3 [ label = " x_4_18_2 >= 1  " ];
+n4 [label="N_4 (48m53s) \n[232.42,1000000000.00]"];
+n2 -> n4 [ label = " x_27_18_2 >= 1  " ];
+n5 [label="N_5 (52m14s) \n[232.47,1000000000.00]"];
+n2 -> n5 [ label = " x_27_18_2 <= 0  " ];
+n6 [label="N_6 (1h8m) \n[232.96,1000000000.00]"];
+n4 -> n6 [ label = " x_4_8_2 <= 0  " ];
+n7 [label="N_7 (1h13m) \n[232.74,1000000000.00]"];
+n4 -> n7 [ label = " x_4_8_2 >= 1  " ];
+n8 [label="N_8 (1h34m) \n[237.30,1000000000.00]"];
+n7 -> n8 [ label = " x_14_27_2 <= 0  " ];
+n9 [label="N_9 (1h39m) \n[233.28,1000000000.00]"];
+n7 -> n9 [ label = " x_14_27_2 >= 1  " ];
+n10 [label="N_10 (1h58m) \n[247.33,1000000000.00]"];
+n9 -> n10 [ label = " x_1_14_2 >= 1  " ];
+n11 [label="N_11 (2h0m) \n[233.31,1000000000.00]"];
+n9 -> n11 [ label = " x_1_14_2 <= 0  " ];
+}
+
+# Data path: data/InstanzCPLEX_HCSRP_25_1.txt
+

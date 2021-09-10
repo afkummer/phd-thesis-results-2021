@@ -1,0 +1,279 @@
+*********************************************
+ Instance: data/InstanzCPLEX_HCSRP_50_3.txt
+ UB: 999999999
+ B&B tree: ./bbTree-fDrkldkn.vrp
+*********************************************
+--- VRPSolver-based algorithm for VRPTW (HHCRSP) ---
+Data path: data/InstanzCPLEX_HCSRP_50_3.txt
+Upper bound known: 1.0e9
+Number of patients: 50
+Number of vehicles: 10
+Expanded number of nodes: 65
+
+Building VRPTW model...
+
+Set cutoff of 1.0e9.
+
+Optimizing the problem...
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.4.1, 24/03/2021. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+Paper: dx.doi.org/10.1007/s10107-020-01523-z
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v053, 24/03/2021, © Inria Bordeaux, France (license expires 1/12/2022)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 7200
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 6
+RCSPhardTimeThresholdInPricing = 15
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 2
+RCSPapplyReducedCostFixing = 1
+RCSPredCostFixingFalseGap = 0
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 5000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 8
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 5
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.02
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 100
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.2
+StrongBranchingPhaseTwoCandidatesNumber = 5
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.02
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+09, TIME = 0h0m0s2t = 2
+Model is built TIME = 0h0m1s62t = 162
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+09 ], TIME = 0h0m1s62t = 162
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 150 art. vars. (150 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=8.35> <Mt= 0.03> <Spt= 6.68> <nCl=2850> <DB=-378008496696.8817> <Mlp=62570784.2901> <PB=1e+09> 
+<DWph=2> <it= 20> <et=15.09> <Mt= 0.04> <Spt= 6.69> <nCl=2291> <DB=-5962.1388> <Mlp=  411.1345> <PB=1e+09> 
+<DWph=2> <it= 30> <et=22.72> <Mt= 0.07> <Spt= 7.56> <nCl=2328> <DB=-1855.0229> <Mlp=  320.5952> <PB=1e+09> 
+<DWph=2> <it= 40> <et=30.19> <Mt= 0.09> <Spt= 7.28> <nCl=2096> <DB=-1060.1165> <Mlp=  281.5831> <PB=1e+09> 
+<DWph=2> <it= 50> <et=37.20> <Mt= 0.09> <Spt= 6.80> <nCl=1913> <DB= -429.7392> <Mlp=  256.4304> <PB=1e+09> 
+<DWph=2> <it= 60> <et=43.22> <Mt= 0.09> <Spt= 5.94> <nCl=1678> <DB= -133.6890> <Mlp=  245.8927> <PB=1e+09> 
+<DWph=2> <it= 70> <et=48.65> <Mt= 0.08> <Spt= 5.21> <nCl=1350> <DB=   16.0782> <Mlp=  239.7558> <PB=1e+09> 
+<DWph=2> <it= 80> <et=53.61> <Mt= 0.07> <Spt= 4.88> <nCl=1366> <DB=   54.7802> <Mlp=  237.6407> <PB=1e+09> 
+<DWph=2> <it= 90> <et=58.39> <Mt= 0.07> <Spt= 4.54> <nCl=1306> <DB=  126.0222> <Mlp=  236.6486> <PB=1e+09> 
+<DWph=2> <it=100> <et=63.13> <Mt= 0.06> <Spt= 4.67> <nCl=1203> <DB=  154.3714> <Mlp=  236.1982> <PB=1e+09> 
+<DWph=2> <it=110> <et=68.05> <Mt= 0.06> <Spt= 4.65> <nCl=1059> <DB=  152.3817> <Mlp=  235.5064> <PB=1e+09> 
+<DWph=2> <it=120> <et=72.48> <Mt= 0.07> <Spt= 4.35> <nCl=1118> <DB=  186.5791> <Mlp=  233.5756> <PB=1e+09> 
+<DWph=2> <it=130> <et=77.06> <Mt= 0.07> <Spt= 4.26> <nCl=954> <DB=  164.2675> <Mlp=  232.4812> <PB=1e+09> 
+<DWph=2> <it=140> <et=81.20> <Mt= 0.06> <Spt= 4.08> <nCl=859> <DB=  167.1074> <Mlp=  231.9288> <PB=1e+09> 
+<DWph=2> <it=150> <et=85.00> <Mt= 0.06> <Spt= 3.73> <nCl=649> <DB=  215.5283> <Mlp=  231.7460> <PB=1e+09> 
+<DWph=2> <it=155> <et=86.70> <Mt= 0.03> <Spt= 1.42> <nCl=126> <DB=  232.3245> <Mlp=  231.7190> <PB=1e+09> 
+<DWph=1> <it=160> <et=90.98> <Mt= 0.03> <Spt= 4.26> <nCl=697> <DB=  131.2989> <Mlp=  231.6767> <PB=1e+09> 
+<DWph=1> <it=170> <et=98.22> <Mt= 0.06> <Spt= 7.17> <nCl=1218> <DB=  153.2778> <Mlp=  231.1478> <PB=1e+09> 
+<DWph=1> <it=180> <et=105.23> <Mt= 0.06> <Spt= 6.73> <nCl=1162> <DB= -106.1534> <Mlp=  230.4617> <PB=1e+09> 
+<DWph=1> <it=190> <et=111.58> <Mt= 0.07> <Spt= 6.29> <nCl=1088> <DB=  167.4480> <Mlp=  229.4802> <PB=1e+09> 
+<DWph=1> <it=200> <et=118.30> <Mt= 0.06> <Spt= 6.42> <nCl=1002> <DB=  190.4646> <Mlp=  228.6876> <PB=1e+09> 
+<DWph=1> <it=210> <et=124.12> <Mt= 0.06> <Spt= 5.76> <nCl=1053> <DB=  183.9048> <Mlp=  228.3534> <PB=1e+09> 
+<DWph=1> <it=217> <et=128.52> <Mt= 0.04> <Spt= 4.12> <nCl=633> <DB=  121.5382> <Mlp=  228.1665> <PB=1e+09> 
+<DWph=0> <it=220> <et=161.99> <Mt= 0.02> <Spt=33.44> <nCl=1155> <DB=  104.9301> <Mlp=  227.8726> <PB=1e+09> 
+<DWph=0> <it=230> <et=261.31> <Mt= 0.06> <Spt=98.90> <nCl=3617> <DB=  163.0727> <Mlp=  227.1103> <PB=1e+09> 
+<DWph=0> <it=240> <et=354.74> <Mt= 0.05> <Spt=93.23> <nCl=3390> <DB=  168.9318> <Mlp=  226.3685> <PB=1e+09> 
+<DWph=0> <it=250> <et=504.46> <Mt= 0.05> <Spt=149.53> <nCl=2332> <DB=  192.0544> <Mlp=  225.4721> <PB=1e+09> 
+<DWph=0> <it=260> <et=603.98> <Mt= 0.05> <Spt=99.33> <nCl=2953> <DB=  182.5162> <Mlp=  225.2318> <PB=1e+09> 
+<DWph=0> <it=270> <et=664.11> <Mt= 0.04> <Spt=59.95> <nCl=2735> <DB=  213.5404> <Mlp=  225.1194> <PB=1e+09> 
+<DWph=0> <it=280> <et=737.90> <Mt= 0.04> <Spt=73.53> <nCl=2346> <DB=  212.0177> <Mlp=  225.0533> <PB=1e+09> 
+<DWph=0> <it=290> <et=763.49> <Mt= 0.04> <Spt=25.41> <nCl=2834> <DB=  216.5256> <Mlp=  225.0198> <PB=1e+09> 
+<DWph=0> <it=300> <et=805.58> <Mt= 0.04> <Spt=41.91> <nCl=3289> <DB=  175.0504> <Mlp=  224.8989> <PB=1e+09> 
+<DWph=0> <it=310> <et=973.11> <Mt= 0.04> <Spt=167.27> <nCl=2635> <DB=  163.6073> <Mlp=  224.8989> <PB=1e+09> 
+<DWph=0> <it=320> <et=999.73> <Mt= 0.05> <Spt=26.57> <nCl=1457> <DB=  220.9296> <Mlp=  224.6235> <PB=1e+09> 
+<DWph=0> <it=330> <et=1103.70> <Mt= 0.04> <Spt=103.82> <nCl=1614> <DB=  219.7563> <Mlp=  224.5470> <PB=1e+09> 
+<DWph=0> <it=340> <et=1220.24> <Mt= 0.04> <Spt=116.25> <nCl=3241> <DB=  222.5592> <Mlp=  224.5289> <PB=1e+09> 
+<DWph=0> <it=350> <et=1266.15> <Mt= 0.04> <Spt=45.76> <nCl=1907> <DB=  223.1438> <Mlp=  224.5250> <PB=1e+09> 
+<DWph=0> <it=360> <et=1284.20> <Mt= 0.04> <Spt=17.88> <nCl=2613> <DB=  221.7959> <Mlp=  224.5089> <PB=1e+09> 
+<DWph=0> <it=370> <et=1325.85> <Mt= 0.03> <Spt=41.50> <nCl=2595> <DB=  223.7661> <Mlp=  224.5089> <PB=1e+09> 
+<DWph=0> <it=380> <et=1374.02> <Mt= 0.04> <Spt=48.04> <nCl=2269> <DB=  223.1690> <Mlp=  224.5089> <PB=1e+09> 
+<DWph=0> <it=390> <et=1481.24> <Mt= 0.04> <Spt=107.07> <nCl=2201> <DB=  223.4871> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=400> <et=1535.97> <Mt= 0.04> <Spt=54.59> <nCl=2635> <DB=  223.7708> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=410> <et=1601.50> <Mt= 0.03> <Spt=65.39> <nCl=2570> <DB=  224.3670> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=420> <et=1690.24> <Mt= 0.04> <Spt=88.47> <nCl=2426> <DB=  224.3190> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=430> <et=1806.32> <Mt= 0.04> <Spt=115.96> <nCl=2642> <DB=  224.3926> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=440> <et=1906.24> <Mt= 0.04> <Spt=99.66> <nCl=3107> <DB=  208.1755> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=450> <et=2007.03> <Mt= 0.04> <Spt=100.66> <nCl=3547> <DB=  222.6107> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=460> <et=2132.32> <Mt= 0.04> <Spt=125.04> <nCl=2376> <DB=  224.2330> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=470> <et=2200.72> <Mt= 0.03> <Spt=68.27> <nCl=1521> <DB=   -7.3459> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=480> <et=2257.13> <Mt= 0.04> <Spt=56.28> <nCl=2665> <DB=  224.2712> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=490> <et=2337.20> <Mt= 0.04> <Spt=79.91> <nCl=1993> <DB=  221.1362> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=500> <et=2396.58> <Mt= 0.04> <Spt=59.15> <nCl=2739> <DB=  211.6513> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=510> <et=2465.59> <Mt= 0.04> <Spt=68.85> <nCl=1278> <DB=  224.4831> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=520> <et=2535.76> <Mt= 0.04> <Spt=70.01> <nCl=2712> <DB=  -49.2472> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=530> <et=2626.74> <Mt= 0.04> <Spt=90.85> <nCl=2816> <DB=  218.8818> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=540> <et=2695.88> <Mt= 0.04> <Spt=68.89> <nCl=1490> <DB=  224.4924> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=550> <et=2828.22> <Mt= 0.03> <Spt=132.30> <nCl=1828> <DB=  223.7465> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=560> <et=2936.99> <Mt= 0.04> <Spt=108.50> <nCl=2576> <DB=  224.4392> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=570> <et=3069.98> <Mt= 0.04> <Spt=132.86> <nCl=2249> <DB=  218.6052> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=580> <et=3147.06> <Mt= 0.04> <Spt=76.93> <nCl=1861> <DB=  224.4637> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=590> <et=3266.42> <Mt= 0.04> <Spt=119.22> <nCl=2173> <DB=  219.9022> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=600> <et=3317.28> <Mt= 0.04> <Spt=50.71> <nCl=1773> <DB=  224.3285> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=610> <et=3394.64> <Mt= 0.04> <Spt=77.22> <nCl=2015> <DB=  221.2130> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=620> <et=3442.50> <Mt= 0.04> <Spt=47.70> <nCl=2131> <DB=  224.1503> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=630> <et=3475.53> <Mt= 0.03> <Spt=32.87> <nCl=1487> <DB=  215.6410> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=640> <et=3584.99> <Mt= 0.04> <Spt=109.31> <nCl=2993> <DB=  222.9193> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=650> <et=3625.66> <Mt= 0.04> <Spt=40.52> <nCl=2125> <DB=  224.4481> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=660> <et=3664.27> <Mt= 0.04> <Spt=38.49> <nCl=1596> <DB=  224.4813> <Mlp=  224.5047> <PB=1e+09> 
+<DWph=0> <it=669> <et=3795.42> <Mt= 0.04> <Spt=130.87> <nCl=1272> <DB=  224.5047> <Mlp=  224.5047> <PB=1e+09> 
+Reduced cost fixing for graph G_7... took 1.29 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_4... took 1.28 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_8... took 0.13 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_3... took 0.09 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_6... took 0.09 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_9... took 1.29 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_2... took 0.09 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_5... took 0.08 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_10... took 0.1 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.04 sec. and not succeeded.
+Reduced cost fixing for graph G_1... took 0.34 sec., 101792 buck. arcs remain (100% from prev., 49.2% from max.)
+Run enumeration... took 0.03 sec. and not succeeded.
+Bucket graph for G_7 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_4 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_8 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_9 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_1 is regenerated as bucket steps were adjusted for 67 vertices
+ColGenEvalAlg final dual bound: 224.505 (rounded: 224.505)
+----- Add fac. cuts : R1C(65), max.viol = 0.5, aver.viol = 0.481912, sep/add took 0.05/1.14 sec. -----
+10602 columns (10602 active), 65 dyn. constrs. (65 active), 205 art. vars. (205 active)
+<DWph=2> <it= 10> <et=3820.27> <Mt= 0.25> <Spt=17.56> <nCl=2415> <DB= -462.7360> <Mlp=  332.4342> <PB=1e+09> 
+<DWph=2> <it= 20> <et=3833.33> <Mt= 0.09> <Spt=12.94> <nCl=1353> <DB=  198.4186> <Mlp=  263.5680> <PB=1e+09> 
+<DWph=2> <it= 30> <et=3844.55> <Mt= 0.08> <Spt=11.14> <nCl=1158> <DB=  218.0746> <Mlp=  249.1556> <PB=1e+09> 
+<DWph=2> <it= 40> <et=3853.86> <Mt= 0.06> <Spt= 9.21> <nCl=974> <DB=  220.0318> <Mlp=  240.2034> <PB=1e+09> 
+<DWph=2> <it= 50> <et=3863.85> <Mt= 0.07> <Spt= 9.92> <nCl=845> <DB=  198.9133> <Mlp=  234.3902> <PB=1e+09> 
+<DWph=2> <it= 60> <et=3873.87> <Mt= 0.08> <Spt= 9.80> <nCl=938> <DB=  169.7975> <Mlp=  231.4502> <PB=1e+09> 
+<DWph=2> <it= 70> <et=3883.42> <Mt= 0.05> <Spt= 9.50> <nCl=753> <DB=  174.5801> <Mlp=  230.4349> <PB=1e+09> 
+<DWph=2> <it= 80> <et=3893.85> <Mt= 0.06> <Spt=10.36> <nCl=823> <DB=  211.7029> <Mlp=  229.7180> <PB=1e+09> 
+<DWph=2> <it= 90> <et=3903.53> <Mt= 0.05> <Spt= 9.40> <nCl=733> <DB=  209.5460> <Mlp=  229.3252> <PB=1e+09> 
+<DWph=2> <it= 91> <et=3903.54> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=  209.5460> <Mlp=  229.3213> <PB=1e+09> 
+<DWph=1> <it=100> <et=3917.77> <Mt= 0.04> <Spt=14.18> <nCl=1019> <DB=  164.7661> <Mlp=  228.6189> <PB=1e+09> 
+<DWph=1> <it=110> <et=3933.45> <Mt= 0.06> <Spt=15.37> <nCl=1055> <DB=  188.4359> <Mlp=  228.2186> <PB=1e+09> 
+<DWph=1> <it=120> <et=3948.06> <Mt= 0.06> <Spt=14.55> <nCl=922> <DB=  182.1209> <Mlp=  227.8072> <PB=1e+09> 
+<DWph=1> <it=130> <et=3962.17> <Mt= 0.06> <Spt=14.05> <nCl=899> <DB=  200.2738> <Mlp=  227.6309> <PB=1e+09> 
+<DWph=1> <it=140> <et=3976.79> <Mt= 0.06> <Spt=14.25> <nCl=735> <DB=  188.6216> <Mlp=  227.3944> <PB=1e+09> 
+<DWph=1> <it=150> <et=3991.11> <Mt= 0.06> <Spt=14.26> <nCl=815> <DB=  179.5881> <Mlp=  227.2926> <PB=1e+09> 
+<DWph=1> <it=160> <et=4005.72> <Mt= 0.06> <Spt=14.23> <nCl=739> <DB=  206.7419> <Mlp=  227.2515> <PB=1e+09> 
+<DWph=1> <it=170> <et=4019.22> <Mt= 0.05> <Spt=13.45> <nCl=734> <DB=   35.2051> <Mlp=  227.2089> <PB=1e+09> 
+<DWph=1> <it=180> <et=4030.00> <Mt= 0.06> <Spt=10.72> <nCl=429> <DB=  208.1636> <Mlp=  227.0888> <PB=1e+09> 
+<DWph=1> <it=190> <et=4045.79> <Mt= 0.06> <Spt=15.40> <nCl=555> <DB=  205.0643> <Mlp=  226.9472> <PB=1e+09> 
+<DWph=1> <it=200> <et=4061.10> <Mt= 0.05> <Spt=15.25> <nCl=526> <DB=  100.4482> <Mlp=  226.7967> <PB=1e+09> 
+<DWph=1> <it=210> <et=4073.18> <Mt= 0.06> <Spt=11.73> <nCl=376> <DB=  224.1811> <Mlp=  226.5824> <PB=1e+09> 
+<DWph=1> <it=220> <et=4086.46> <Mt= 0.05> <Spt=13.22> <nCl=538> <DB=  221.4115> <Mlp=  226.4840> <PB=1e+09> 
+<DWph=1> <it=230> <et=4099.87> <Mt= 0.06> <Spt=13.06> <nCl=336> <DB=  215.4913> <Mlp=  226.4345> <PB=1e+09> 
+<DWph=1> <it=240> <et=4110.96> <Mt= 0.05> <Spt=11.03> <nCl=223> <DB=  222.3106> <Mlp=  226.2771> <PB=1e+09> 
+<DWph=1> <it=250> <et=4118.35> <Mt= 0.05> <Spt= 7.33> <nCl=152> <DB=  218.4818> <Mlp=  226.2266> <PB=1e+09> 
+<DWph=1> <it=260> <et=4129.44> <Mt= 0.06> <Spt=10.74> <nCl=330> <DB=  222.9242> <Mlp=  226.1677> <PB=1e+09> 
+<DWph=1> <it=265> <et=4137.71> <Mt= 0.02> <Spt= 8.25> <nCl=336> <DB=   56.2611> <Mlp=  226.1677> <PB=1e+09> 
+<DWph=0> <it=270> <et=4245.36> <Mt= 0.02> <Spt=107.38> <nCl=2078> <DB=  165.7608> <Mlp=  226.1677> <PB=1e+09> 
+<DWph=0> <it=280> <et=4414.97> <Mt= 0.06> <Spt=169.40> <nCl=4135> <DB=  199.9999> <Mlp=  226.0667> <PB=1e+09> 
+<DWph=0> <it=290> <et=4493.20> <Mt= 0.04> <Spt=77.83> <nCl=2822> <DB=  102.9924> <Mlp=  225.5193> <PB=1e+09> 
+<DWph=0> <it=300> <et=4573.40> <Mt= 0.05> <Spt=79.99> <nCl=3118> <DB=  211.5272> <Mlp=  225.4176> <PB=1e+09> 
+<DWph=0> <it=310> <et=4841.64> <Mt= 0.04> <Spt=267.88> <nCl=3508> <DB=  212.6504> <Mlp=  225.3192> <PB=1e+09> 
+<DWph=0> <it=320> <et=4922.36> <Mt= 0.05> <Spt=80.50> <nCl=3435> <DB=  209.6179> <Mlp=  225.2713> <PB=1e+09> 
+<DWph=0> <it=330> <et=5026.38> <Mt= 0.04> <Spt=103.65> <nCl=3315> <DB=  214.3731> <Mlp=  225.1547> <PB=1e+09> 
+<DWph=0> <it=340> <et=5102.88> <Mt= 0.05> <Spt=76.29> <nCl=3677> <DB=  220.3567> <Mlp=  225.1281> <PB=1e+09> 
+<DWph=0> <it=350> <et=5157.77> <Mt= 0.04> <Spt=54.54> <nCl=3207> <DB=  206.4237> <Mlp=  225.1098> <PB=1e+09> 
+<DWph=0> <it=360> <et=5317.11> <Mt= 0.05> <Spt=158.98> <nCl=3579> <DB=  214.9947> <Mlp=  225.0588> <PB=1e+09> 
+<DWph=0> <it=370> <et=5412.12> <Mt= 0.05> <Spt=94.78> <nCl=3423> <DB=  215.2465> <Mlp=  224.9911> <PB=1e+09> 
+<DWph=0> <it=380> <et=5460.43> <Mt= 0.04> <Spt=48.12> <nCl=3110> <DB=  221.5407> <Mlp=  224.8096> <PB=1e+09> 
+<DWph=0> <it=390> <et=5530.62> <Mt= 0.04> <Spt=69.84> <nCl=2564> <DB=  195.0085> <Mlp=  224.7693> <PB=1e+09> 
+<DWph=0> <it=400> <et=5597.74> <Mt= 0.05> <Spt=66.90> <nCl=3338> <DB=  221.2739> <Mlp=  224.7584> <PB=1e+09> 
+<DWph=0> <it=410> <et=5662.56> <Mt= 0.04> <Spt=64.44> <nCl=3081> <DB=  222.4130> <Mlp=  224.7467> <PB=1e+09> 
+<DWph=0> <it=420> <et=5744.98> <Mt= 0.05> <Spt=82.19> <nCl=2920> <DB=  220.5346> <Mlp=  224.7271> <PB=1e+09> 
+<DWph=0> <it=430> <et=5780.62> <Mt= 0.04> <Spt=35.29> <nCl=3688> <DB=  205.9691> <Mlp=  224.6937> <PB=1e+09> 
+<DWph=0> <it=440> <et=5873.76> <Mt= 0.05> <Spt=92.92> <nCl=3453> <DB=   61.3864> <Mlp=  224.6937> <PB=1e+09> 
+<DWph=0> <it=450> <et=6062.62> <Mt= 0.06> <Spt=188.49> <nCl=4101> <DB=  214.7992> <Mlp=  224.6914> <PB=1e+09> 
+<DWph=0> <it=460> <et=6102.65> <Mt= 0.05> <Spt=39.65> <nCl=2931> <DB=  223.9895> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=470> <et=6235.64> <Mt= 0.05> <Spt=132.76> <nCl=2955> <DB=  221.5134> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=480> <et=6280.90> <Mt= 0.04> <Spt=44.89> <nCl=2967> <DB=  223.7007> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=490> <et=6359.37> <Mt= 0.04> <Spt=78.09> <nCl=2619> <DB=  177.1808> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=500> <et=6406.90> <Mt= 0.04> <Spt=47.31> <nCl=3555> <DB=  223.4494> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=510> <et=6593.94> <Mt= 0.04> <Spt=186.72> <nCl=2584> <DB=  205.4585> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=520> <et=6710.27> <Mt= 0.04> <Spt=116.13> <nCl=3227> <DB=  223.8406> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=530> <et=6789.44> <Mt= 0.05> <Spt=78.82> <nCl=2671> <DB=  224.4393> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=540> <et=6866.88> <Mt= 0.04> <Spt=77.25> <nCl=2627> <DB=  218.7449> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=550> <et=6925.81> <Mt= 0.04> <Spt=58.72> <nCl=2807> <DB=  221.6443> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=560> <et=6996.43> <Mt= 0.04> <Spt=70.21> <nCl=3033> <DB=  213.3879> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=570> <et=7101.68> <Mt= 0.04> <Spt=104.90> <nCl=3630> <DB=  224.3940> <Mlp=  224.6770> <PB=1e+09> 
+<DWph=0> <it=580> <et=7220.38> <Mt= 0.04> <Spt=118.49> <nCl=2865> <DB=  224.3699> <Mlp=  224.6770> <PB=1e+09> 
+Global time limit is reached during column generation
+Bucket graph for G_7 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_4 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_8 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_9 is regenerated as bucket steps were adjusted for 67 vertices
+Bucket graph for G_1 is regenerated as bucket steps were adjusted for 67 vertices
+ColGenEvalAlg final dual bound: 224.526 (rounded: 224.526)
+----- Cut generation stopped by global time limit
+************************************************************************************************
+Search is finished, global bounds : [ 224.526 , 1e+09 ], TIME = 2h0m22s5t = 722205
+************************************************************************************************
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: mankowska & 0 & 1.0e9 & 224.53 & 7222.04 & 1 & 224.53 & -- & 7222.05 \\
+
+Optimization finished!
+Time consumed (build+solve): 7223.761373903 secs
+Solver status: UserLimit
+A solutions was found? false
+
+
+# Solution for data/InstanzCPLEX_HCSRP_50_3.txt
+# Cost = 0.0
+# <vehicle>
+# <node ID> <patient ID> <svc ID>
+# Routes finish with '-1'
+1
+1 1 1
+-1
+2
+1 1 1
+-1
+3
+1 1 1
+-1
+4
+1 1 1
+-1
+5
+1 1 1
+-1
+6
+1 1 1
+-1
+7
+1 1 1
+-1
+8
+1 1 1
+-1
+9
+1 1 1
+-1
+10
+1 1 1
+-1

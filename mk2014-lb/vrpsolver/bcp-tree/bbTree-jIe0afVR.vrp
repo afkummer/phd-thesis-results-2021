@@ -1,0 +1,13 @@
+##Command to get a nice layout: dot -Tpdf thisfile > thisfile.pdf
+
+digraph master_BaP_Tree {
+edge[fontname = "Courier", fontsize = 10];
+n1 [label="N_1 (6m33s) \n[196.42,1000000000.00]"];
+n2 [label="N_2 (1h22m) \n[204.60,1000000000.00]"];
+n1 -> n2 [ label = " x_13_3_2 >= 1  " ];
+n3 [label="N_3 (1h22m) \n[196.42,1000000000.00]"];
+n1 -> n3 [ label = " x_13_3_2 <= 0  " ];
+}
+
+# Data path: data/InstanzCPLEX_HCSRP_25_7.txt
+
