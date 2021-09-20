@@ -49,7 +49,7 @@ generate_means <- function(data) {
 args <- commandArgs(trailingOnly = T)
 
 if (length(args) != 2) {
-   cat("Usage: ./02-generate_means.R <input CSV> <output CSV>\n")
+   cat("Usage: ./02-generate-means.R <input CSV> <output CSV>\n")
    q(status = 1)
 }
 

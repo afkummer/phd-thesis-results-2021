@@ -10,7 +10,7 @@ invisible(enableJIT(3))
 args <- commandArgs(trailingOnly = T)
 
 if (length(args) != 3) {
-   cat("Usage: ./03-algorith_comparator.R <rg.csv> <go.csv> <ro.csv>\n")
+   cat("Usage: ./03-algo-comparator.R <rg.csv> <go.csv> <ro.csv>\n")
    cat("This script only works with pre-processed data with 01-fix_names.R.\n")
    q(status = 1)
 }

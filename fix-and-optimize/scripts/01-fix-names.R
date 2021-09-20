@@ -6,7 +6,7 @@ source("00-utils.R")
 args <- commandArgs(trailingOnly = T)
 
 if (length(args) != 2) {
-   cat("Usage: ./01-fix_names.R <input CSV> <output CSV>\n")
+   cat("Usage: ./01-fix-names.R <input CSV> <output CSV>\n")
    q(status = 1)
 }
 
