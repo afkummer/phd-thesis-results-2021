@@ -31,6 +31,7 @@ if __name__ == "__main__":
    rootTime = ""
    bcpNodes = ""
    bestBound = ""
+   tlColgen = "0"
 
    with openLog(argv[1]) as fid:
       for line in fid:
@@ -63,10 +64,13 @@ if __name__ == "__main__":
             bcpNodes = tks[11]
             bestBound = tks[13]
 
+         if "Global time limit is reached during column generation" in line:
+            tlColgen = "1"
+
    with open("results.csv", "a+") as fid:
       if fid.tell() == 0:
-         fid.write("instance,ub,patients,vehi,patients.exp,cost,time.build.solve,opt.found,cost.root.rmp,time.root,bcp.nodes,cost.bestbound\n")
+         fid.write("instance,ub,patients,vehi,patients.exp,cost,time.build.solve,opt.found,tl.colgen,cost.root.rmp,time.root,bcp.nodes,cost.bestbound\n")
 
       fid.write(inst + "," + ub + "," + patients + "," + vehi + "," + expanded + ",")
-      fid.write(cost + "," + timeAll + "," + opt + "," + rootObjRmp + "," + rootTime + ",")
+      fid.write(cost + "," + timeAll + "," + opt + "," + tlColgen + "," + rootObjRmp + "," + rootTime + ",")
       fid.write(bcpNodes + "," + bestBound + "\n")
