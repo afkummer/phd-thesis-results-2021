@@ -3,9 +3,13 @@
 require(dplyr)
 require(data.table)
 
+# Utilitary functions for translating instances files from
+# Mankowska et al. (2014) dataset to the naming convention
+# used in their article.
+
 # Converts instance sizes (number of nodes) to the name of the
 # respective instance subsets.
-instanceSizeToFamily <- function(s) {
+instance_size_to_subset <- function(s) {
    s <- as.character(s)
    if (s == "10") {
       return("A")
@@ -28,27 +32,14 @@ instanceSizeToFamily <- function(s) {
 # Takes an entire path, extract the information regarding the
 # instance, and returns the adequate name according to Mankowska's
 # naming convention.
-extractInstanceName <- function(s) {
+format_mk_instance_name <- function(s) {
    tks <- unlist(strsplit(s, "[_\\.]"))
-   return(paste0(instanceSizeToFamily(tks[3]), tks[4]))
+   return(paste0(instance_size_to_subset(tks[3]), tks[4]))
 }
 
-extractInstanceNames.df <- function(df, colname = "instance") {
-   fvec = Vectorize(extractInstanceName)
+# Changes the instance names from filepath to (subset)(Id) format.
+format_mk_instance_name_df <- function(df, colname = "instance") {
+   fvec <- Vectorize(format_mk_instance_name)
    df <- as_tibble(df)
    return(dplyr::mutate(df, !!as.name(colname) := fvec(!!as.name(colname))))
 }
-
-extractInstanceSize <- function(s) {
-   tks <- unlist(strsplit(s, "[_\\.]"))
-   return(as.numeric(instanceSizeToFamily(tks[3])))
-}
-
-cat("Importing data...\n")
-all <- fread("all.csv")
-
-cat("\n\nFixing instance names...\n")
-all.fx <- extractInstanceNames.df(all)
-
-cat("\n\nWriting data back to csv...\n")
-fwrite(all.fx, "all.fx.csv")
