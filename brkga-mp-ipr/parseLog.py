@@ -3,6 +3,7 @@
 
 # Support for reading XZ-compressed data.
 import lzma
+from os import path
 
 def openLog(fname:str):
    if ".xz" in fname:
@@ -38,13 +39,15 @@ if __name__ == "__main__":
       if fid.tell() == 0:
          fid.write("instance,seed,generation,remaining,cost.local,el.diver,no.impr,cost,dist,tard,tmax,time,op.flags,op.pr,op.xe,op.rst\n")
       for row in data:
-         fid.write(instance + "," + str(seed) + ",")
-         fid.write(','.join(row))
+         dt = ""
+         dt += path.basename(instance) + "," + str(seed) + ","
+         dt += ','.join(row)
          if 'P' not in row[-1] and 'X' not in row[-1] and 'R' not in row[-1]:
-            fid.write(",,0,0,0")
+            dt += ",,0,0,0"
          else:
-            fid.write(",")
-            fid.write("1," if 'P' in row[-1] else "0,")
-            fid.write("1," if 'X' in row[-1] else "0,")
-            fid.write("1" if 'R' in row[-1] else "0")
-         fid.write("\n")
+            dt += ","
+            dt += "1," if 'P' in row[-1] else "0,"
+            dt += "1," if 'X' in row[-1] else "0,"
+            dt += "1" if 'R' in row[-1] else "0"
+         dt += "\n"
+         fid.write(dt)
