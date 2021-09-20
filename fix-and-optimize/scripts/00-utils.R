@@ -41,5 +41,10 @@ format_mk_instance_name <- function(s) {
 format_mk_instance_name_df <- function(df, colname = "instance") {
    fvec <- Vectorize(format_mk_instance_name)
    df <- as_tibble(df)
-   return(dplyr::mutate(df, !!as.name(colname) := fvec(!!as.name(colname))))
+   df <- dplyr::mutate(df, !!as.name(colname) := fvec(!!as.name(colname))) %>%
+      mutate(
+         subset = substr(!!as.name(colname), 1, 1),
+         iid = substr(!!as.name(colname), 2, 999999L)
+      )
+   return(df)
 }
