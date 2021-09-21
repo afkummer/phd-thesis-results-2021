@@ -51,3 +51,5 @@ if __name__ == "__main__":
             dt += "1" if 'R' in row[-1] else "0"
          dt += "\n"
          fid.write(dt)
+   
+   print("Log written to results.csv.")
